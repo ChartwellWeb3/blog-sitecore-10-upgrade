@@ -1,0 +1,45 @@
+﻿
+@{
+
+}
+@{
+
+    Sitecore.Links.UrlOptions options = new Sitecore.Links.UrlOptions();
+
+    options.LanguageEmbedding = Sitecore.Links.LanguageEmbedding.Always;
+    options.LanguageLocation = Sitecore.Links.LanguageLocation.FilePath;
+    options.UseDisplayName = true;
+    options.LowercaseUrls = true;
+}
+@using Sitecore.Feature.XBlog.Areas.XBlog.General;
+@using Sitecore.Feature.XBlog.Areas.XBlog.Search;
+@using Sitecore.Mvc;
+@using Sitecore.Data;
+
+
+@using Sitecore.Data.Items
+@model Sitecore.Data.Items.Item
+@{
+    Item blogHome = Sitecore.Feature.XBlog.Areas.XBlog.General.DataManager.GetBlogHomeItem(Sitecore.Context.Item);
+    var HomeItem = "Home";
+    if (Sitecore.Context.Language.ToString() != "en")
+    {
+        HomeItem = "Accueil";
+    }
+}
+
+<li class="nav-item">
+    <a class="nav-link" id="cwbHome" href="@Sitecore.Links.LinkManager.GetItemUrl(blogHome,options)">
+        @HomeItem
+    </a>
+</li>
+@foreach (Item root in Model.Children)
+{
+    <li class="nav-item">
+        <a class="nav-link" id="cwb-@root["Category Name"]" href="@Html.Raw(CategoryManager.GetCategoryUrlNew(@root["Category Name"], Sitecore.Context.Item).ToLower())">
+            @root["Category Name"]
+        </a>
+    </li>
+}
+
+

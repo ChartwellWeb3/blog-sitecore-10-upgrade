@@ -1,0 +1,68 @@
+﻿@using Sitecore.Feature.XBlog.Areas.XBlog.Items.Blog
+@using Sitecore.Feature.XBlog.Areas.XBlog.Search
+@using Sitecore.Feature.XBlog.Areas.XBlog.General;
+@using Sitecore.Data.Items
+@using Sitecore.Mvc
+@using Sitecore.Resources.Media
+@using Sitecore.Links
+@using Sitecore.Feature.XBlog.Areas.XBlog;
+@inherits System.Web.Mvc.WebViewPage
+
+@{
+    Item dataSourceItem = Sitecore.Context.Database.GetItem(Sitecore.Mvc.Presentation.RenderingContext.Current.Rendering.DataSource);
+    BlogSettings settingsItem = DataManager.GetBlogSettingsItem(dataSourceItem != null ? dataSourceItem : Sitecore.Context.Item);
+    BlogPost currentBlogPost = Sitecore.Context.Item.CreateAs<BlogPost>();
+    Sitecore.Links.UrlOptions options = new Sitecore.Links.UrlOptions();
+
+    options.LanguageEmbedding = Sitecore.Links.LanguageEmbedding.Always;
+    options.LanguageLocation = Sitecore.Links.LanguageLocation.FilePath;
+    options.UseDisplayName = true;
+    options.LowercaseUrls = true;
+}
+
+@if (currentBlogPost != null)
+{
+    <div id='@Html.Raw(settingsItem.PrimaryCSSID)-RelatedBlog'>
+
+        @{
+            //Get search results
+            IEnumerable<BlogPost> blogs = BlogManager.GetBlogRelatedValues(currentBlogPost, settingsItem.RelatedBlogMaxPosts);
+
+
+            if (blogs != null && blogs.Any())
+            {
+
+                <h3>@Html.Sitecore().Field(BlogSettings.RelatedBlogTitleFieldId, settingsItem.InnerItem)</h3>
+                <div class="row relatedPostsContainer">
+                    <!-- related posts start-->
+                    @foreach (BlogPost blogPost in blogs)
+                    {
+                        <div class="col-12 col-md-4 relatedPost" itemprop="headline">
+                            <div class="postImage">
+                                @if (String.IsNullOrEmpty(Convert.ToString(blogPost.BlogImage.Value)))
+                                {
+                                    <a href="@Html.Raw(LinkManager.GetItemUrl(blogPost.InnerItem,options))">
+                                        <img class="img-responsive" src="@Url.Content("-/media/Images/Robert-Speck-Florence-991x821")" alt="@Html.Raw(blogPost.Title)">
+                                    </a>
+                                }
+                                else
+                                {
+                                    var postBkg = Url.Content(blogPost.BlogImageUrls);
+
+                                    <a href="@Html.Raw(LinkManager.GetItemUrl(blogPost.InnerItem,options))">
+                                        <img class="img-responsive" src="@postBkg" alt="@Html.Raw(blogPost.Title)">
+                                    </a>
+                                }
+                            </div>
+                            <div class="postTitle">
+                                <h4><a href="@Html.Raw(LinkManager.GetItemUrl(blogPost.InnerItem,options))">@Html.Raw(blogPost.Title)</a></h4>
+                                <p><a href="@Html.Raw(LinkManager.GetItemUrl(blogPost.InnerItem,options))">@Html.Raw(Sitecore.Feature.XBlog.Areas.XBlog.Helpers.Helper.SafeSubstring(blogPost.Body, settingsItem.DisplaySummaryLength));</a></p>
+                            </div>
+                        </div>
+                    }
+                    <!-- end of related posts-->
+                </div>
+            }
+        }
+    </div>
+}

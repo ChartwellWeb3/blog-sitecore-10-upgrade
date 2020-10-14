@@ -1,0 +1,104 @@
+﻿@using Sitecore.Feature.XBlog.Areas.XBlog.Items.Blog
+@using Sitecore.Feature.XBlog.Areas.XBlog.Search
+@using Sitecore.Feature.XBlog.Areas.XBlog.General
+@using Sitecore.Links
+@using Sitecore.Resources.Media
+@using X.PagedList
+@using X.PagedList.Mvc
+@model Sitecore.Feature.XBlog.Areas.XBlog.Models.Blog.BlogListingModel
+
+@{
+    BlogSettings settingsItem = DataManager.GetBlogSettingsItem(Model.dataSourceItem ?? Sitecore.Context.Item);
+    var isSearch = false;
+    var searchClassName = "";
+    var listingClassNames = "col-12 col-md-12 col-lg-6 cwb-col-xl-4 shadow";
+    Sitecore.Links.UrlOptions options = new Sitecore.Links.UrlOptions();
+    //options.UseDisplayName = true;
+    options.LanguageEmbedding = Sitecore.Links.LanguageEmbedding.Always;
+    options.LanguageLocation = Sitecore.Links.LanguageLocation.FilePath;
+    options.LowercaseUrls = true;
+    if (!string.IsNullOrEmpty(Model.PagingSearchQuery))
+    {
+        isSearch = true;
+        listingClassNames = "col-12 col-sm-12 searchListingPost";
+        searchClassName = "isSearch";
+    }
+}
+
+<div id='@Html.Raw(settingsItem.PrimaryCSSID)' class="@searchClassName">
+    <div class="container-wrapper">
+        <div class="container-fluid">
+            @if (!string.IsNullOrEmpty(Model.SearchHeading))
+            {
+                <h3>@Model.SearchHeading</h3>
+            }
+            <div class="row cwbPostsList">
+                @{
+                    if (Model.BlogPosts == null || !Model.BlogPosts.Any())
+                    {
+                        @Html.Raw(Sitecore.Globalization.Translate.Text("BlogSearchResultsNotFound"));
+                        @*@Html.Raw("Sorry no matching results were found.");*@
+                    }
+                    else
+                    {
+                        foreach (BlogPost blogPost in Model.BlogPosts)
+                        {
+                            var postBkg = Url.Content(blogPost.BlogImageUrls);
+
+
+                            <div class="@listingClassNames">
+
+                                <div class="cwbListPost cwbCentrePost" style="background-image: url('@postBkg'); background-size: cover" onclick="self.location.href='@Html.Raw(LinkManager.GetItemUrl(blogPost.InnerItem, options))'">
+                                    <!--opaque overlay -->
+                                    <div class="cwbListPostContent">
+                                        <div itemprop="headline">
+                                            <h2><a class="cwbCentrePost" href="@Html.Raw(LinkManager.GetItemUrl(blogPost.InnerItem, options))">@Html.Raw(blogPost.Title)</a></h2>
+                                        </div>
+                                        <div class="previewText clear">
+                                            @Html.Raw(Sitecore.Feature.XBlog.Areas.XBlog.Helpers.Helper.SafeSubstring(blogPost.Body, settingsItem.DisplaySummaryLength))
+
+
+                                            @if (settingsItem.ReadMoreLinkText != "")
+                                            {
+                                                <span class="readmore">
+                                                    ... <a href="@Html.Raw(LinkManager.GetItemUrl(blogPost.InnerItem, options))" class="cwbCentrePost">@Html.Raw(settingsItem.ReadMoreLinkText)</a>
+                                                </span>
+                                            }
+
+
+                                        </div>
+                                        <div itemprop="articleSection" class="categories">
+                                            @Html.Raw("<strong>" + settingsItem.BlogListingCategoryTitle + "</strong> " + CategoryManager.GetCommaSeperatedCategoryList(blogPost))
+                                        </div>
+                                        <div itemprop="articleSection" class="tags">
+                                            @Html.Raw("<strong>" + settingsItem.BlogListingTagTitle + "</strong> " + TagManager.GetCommaSeperatedTagList(blogPost))
+                                        </div>
+                                    </div><!--opaque overlay ends -->
+                                </div>
+
+                            </div>
+
+                        }
+                    }
+                }
+            </div>
+
+            @Html.PagedListPager(Model.BlogPosts, page => Url.Action(@Sitecore.Globalization.Translate.Text("Blog").ToLower(), "../../", new { page, category = @Model.PagingCatQuery, tag = @Model.PagingTagQuery, searchterm = @Model.PagingSearchQuery }),
+                                                                                       new X.PagedList.Mvc.Common.PagedListRenderOptionsBase()
+                                                                                       {
+                                                                                           DisplayPageCountAndCurrentLocation = true,
+                                                                                           MaximumPageNumbersToDisplay = 3,
+                                                                                           DisplayItemSliceAndTotal = true,
+                                                                                           DisplayEllipsesWhenNotShowingAllPageNumbers = false,
+                                                                                           LinkToFirstPageFormat = settingsItem.FirstPageText,
+                                                                                           LinkToPreviousPageFormat = settingsItem.PreviousPageText,
+                                                                                           LinkToNextPageFormat = settingsItem.NextPageText,
+                                                                                           LinkToLastPageFormat = settingsItem.LastPageText,
+                                                                                           PageCountAndCurrentLocationFormat = Sitecore.Context.Language.Name == "en" ? "Page {0} of {1}" : "Page {0} de {1}",
+                                                                                           ItemSliceAndTotalFormat = Sitecore.Context.Language.Name == "en" ? "Articles {0} to {1} of {2}" : "Articles {0} à {1} de {2}"
+                                                                                       }
+                                )
+
+        </div>
+    </div>
+</div>

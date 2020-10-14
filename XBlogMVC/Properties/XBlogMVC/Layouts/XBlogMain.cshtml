@@ -1,0 +1,82 @@
+﻿@using Sitecore.Mvc
+@using System.Web.Mvc.Html
+@inherits System.Web.Mvc.WebViewPage
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    @Html.Sitecore().Placeholder("xbloghead")
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/Components/XBlog Assets/Style/XBlog.css" media="all" />
+
+    <!-- RRSSB -->
+    <link rel="stylesheet" href="/Components/XBlog Assets/Style/RRSSB/rrssb.css" />
+    <script src="/Components/XBlog Assets/JS/RRSSB/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light static-top navbar-dark bg-dark">
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> <a class="navbar-brand" href="#">Chartwell</a>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Category1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Category2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Category3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Category4</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Category5</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Category6</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="text" />
+                            <button class="btn btn-primary my-2 my-sm-0" type="submit">
+                                Search
+                            </button>
+                        </form>
+
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                @Html.Sitecore().Placeholder("xblogleft")
+            </div>
+            <div class="col-md-4">
+                @Html.Sitecore().Placeholder("xblogmain")
+            </div>
+            <div class="col-md-4">
+                @Html.Sitecore().Placeholder("xblogright")
+            </div>
+        </div>
+    </div>
+
+    <!-- RRSSB -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/Components/XBlog Assets/JS/RRSSB/vendor/jquery.1.10.2.min.js"><\/script>')</script>
+
+    <script src="/Components/XBlog Assets/JS/RRSSB/rrssb.min.js"></script>
+
+</body>
+</html>
+

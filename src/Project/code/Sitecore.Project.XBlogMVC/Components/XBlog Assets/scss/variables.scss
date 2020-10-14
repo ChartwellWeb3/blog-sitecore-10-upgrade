@@ -1,0 +1,39 @@
+﻿$standardUnit: .5rem;
+
+//COLORS
+
+//grays
+$lightestGray: #f4f4f4;
+$lightGray: #dfdfdf;
+$midGray: #999;
+$darkGray: #666;
+$darkestGray: #333;
+
+
+//Chartwell Colors
+$chartwellPrimary: #0072bc;
+$chartwellAccent: #69ACD7;
+$chartwellComplementary: #663E51;
+$chartwellDarkPrimary: #23527c;
+//FONTS
+$rootFontSize: 16px;
+//$primaryFontStack: 'Montserrat', sans-serif;
+
+$primaryFontStack: 'Roboto','Open Sans', 'Montserrat', sans-serif;
+$headingFontStack: 'Montserrat', sans-serif;
+
+$blogBodyFontStack: $primaryFontStack;
+$navAlternateStack: 'Helvetica Neue', 'Helvetica', arial, sans-serif;
+
+
+
+
+
+//BREAKPOINTS
+$xs-sm-BP: 767px;
+$sm-BP: 991px;
+$lg-BP: 1199px;
+
+
+$standardBorder: 1px solid $lightGray;
+

@@ -1,0 +1,23 @@
+﻿@using Sitecore.Feature.XBlog.Areas.XBlog.Items.Blog
+@using Sitecore.Feature.XBlog.Areas.XBlog.Search
+@using Sitecore.Feature.XBlog.Areas.XBlog
+@using Sitecore.Data.Items
+@using Sitecore.Mvc
+@using Sitecore.Data
+@using Sitecore.Links
+@using Sitecore.Resources.Media
+@using System.Text.RegularExpressions
+@model Sitecore.Feature.XBlog.Areas.XBlog.Models.Blog.MetaModel
+
+@{
+    if (Model == null)
+    {
+        return;
+    }
+}
+
+
+
+<title>@Model.title</title>
+<meta name="description" id="description" content="@Model.description" />
+<meta name="keywords" id="keywords" content="@Model.keyword" />

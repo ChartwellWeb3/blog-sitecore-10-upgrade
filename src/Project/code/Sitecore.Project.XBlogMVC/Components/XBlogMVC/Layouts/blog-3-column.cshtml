@@ -1,0 +1,38 @@
+﻿@using Sitecore.Mvc
+@using System.Web.Mvc.Html
+
+@inherits System.Web.Mvc.WebViewPage
+
+@{
+    var PagingSearchQuery = HttpContext.Current.Request.QueryString["searchterm"];
+    var isSearch = false;
+    if (PagingSearchQuery != null)
+    {
+        isSearch = true;
+    }
+}
+
+@if (isSearch == true)
+{
+    <div class="col-sm-12 col-md-9" id="cwbCenterBlockPostListings">
+        @Html.Sitecore().Placeholder("xblogmain")
+    </div>
+}
+else
+{
+    <div class="col-sm-12 col-md-2 cwbWidget" id="cwbFeatured">
+        @Html.Sitecore().Placeholder("xblogleft")
+        <div class="clearfix"></div>
+    </div>
+    <div class="col-sm-12 col-md-7" id="cwbCenterBlockPostListings">
+        @Html.Sitecore().Placeholder("xblogmain")
+    </div>
+}
+
+<div class="col-sm-12 col-md-3" id="cwbContactForm">
+    <div class="cwbContactFormFloater">
+        @Html.Sitecore().Placeholder("xblogright")
+    </div>
+</div>
+
+

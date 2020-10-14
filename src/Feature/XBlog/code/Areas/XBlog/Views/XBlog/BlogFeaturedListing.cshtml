@@ -1,0 +1,50 @@
+﻿@using Sitecore.Feature.XBlog.Areas.XBlog.Items.Blog
+@using Sitecore.Feature.XBlog.Areas.XBlog.General
+@using Sitecore.Links
+@using X.PagedList
+@using X.PagedList.Mvc
+
+@*@inherits System.Web.Mvc.WebViewPage*@
+@model Sitecore.Feature.XBlog.Areas.XBlog.Models.Blog.BlogListingModel
+
+
+
+@{
+    BlogSettings settingsItem = DataManager.GetBlogSettingsItem(Model.dataSourceItem != null ? Model.dataSourceItem : Sitecore.Context.Item);
+    Sitecore.Links.UrlOptions options = new Sitecore.Links.UrlOptions();
+    options.UseDisplayName = true;
+    options.LanguageEmbedding = Sitecore.Links.LanguageEmbedding.Always;
+    options.LanguageLocation = Sitecore.Links.LanguageLocation.FilePath;
+    options.LowercaseUrls = true;
+}
+<h3>@Html.Raw(settingsItem.AuthorListTitle)</h3>
+<div id='@Html.Raw(settingsItem.PrimaryCSSID)-Left' class="cwbWidgetPostsContainer">
+    <div class="carousel-inner">
+        @foreach (BlogPost blogPost in Model.BlogPosts)
+        {
+            <div class="cwbWidgetPost carousel-item row">
+                <div class="col-xs-6 col-sm-4 col-md-12">
+                    @if (String.IsNullOrEmpty(Convert.ToString(blogPost.BlogImage.Value)))
+                    {
+                        <a href="@Html.Raw(LinkManager.GetItemUrl(blogPost.InnerItem, options))" class="featuredArticle featuredArticleImg">
+                            <img class="img-responsive rounded" src="@Url.Content("-/media/Images/Fotolia_148753341_Subscription_Monthly_M-991x991")" alt="sample">
+                        </a>
+                    }
+                    else
+                    {
+
+                        var postBkg = Url.Content(blogPost.BlogImageUrls);
+                        <a href="@Html.Raw(LinkManager.GetItemUrl(blogPost.InnerItem, options))" class="featuredArticle featuredArticleImg">
+                            <img class="img-responsive rounded" src="@postBkg" alt="@blogPost.Title">
+                        </a>
+                    }
+                </div>
+                <div class="col-xs-6 col-sm-8 col-md-12">
+                    <p class="featuredArticle">
+                        <a href="@Html.Raw(LinkManager.GetItemUrl(blogPost.InnerItem, options))" class="featuredArticleLink">@Html.Raw(blogPost.Title)</a>
+                    </p>
+                </div>
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,31 @@
+﻿
+.cwbListPost.blue {
+    max-height: 1000px;
+    height: 1000px;
+    overflow: hidden;
+    box-shadow: inset 3px 3px 5px rgba(0,0,0,0.15);
+    position: relative;
+    background-color: #0072bc;
+}
+
+.pagination .navigation {
+    margin: 15px auto;
+}
+
+.pagination .navigation a {
+    color: black;
+}
+
+.pagination .navigation a:hover:not(.disabled) {
+    background-color: #0072bc;
+    color: white;
+}
+
+.pagination .navigation a.disabled {
+    color: #999;
+}
+
+.pagination .navigation a.active {
+    box-shadow: inset 2px 2px 9px rgba(0,0,0,0.45);
+    background-color: #f4f4f4;
+}

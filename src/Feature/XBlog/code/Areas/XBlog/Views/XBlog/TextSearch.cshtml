@@ -1,0 +1,60 @@
+﻿@using Sitecore.Feature.XBlog.Areas.XBlog
+@using Sitecore.Feature.XBlog.Areas.XBlog.Items.Blog
+@using Sitecore.Feature.XBlog.Areas.XBlog.Search
+@using Sitecore.Feature.XBlog.Areas.XBlog.General
+@using Sitecore.Data.Items
+@using Sitecore.Mvc
+@using Sitecore.Resources.Media
+@using Sitecore.Links;
+@inherits System.Web.Mvc.WebViewPage
+
+@{
+    Item dataSourceItem = Sitecore.Context.Database.GetItem(Sitecore.Mvc.Presentation.RenderingContext.Current.Rendering.DataSource);
+    BlogSettings settingsItem = DataManager.GetBlogSettingsItem(dataSourceItem != null ? dataSourceItem : Sitecore.Context.Item);
+
+    Item blogHome = DataManager.GetBlogHomeItem(dataSourceItem != null ? dataSourceItem : Sitecore.Context.Item);
+    var HomeItem = "Blog";
+    if (Sitecore.Context.Language.ToString() != "en")
+    {
+        HomeItem = "Blogue";
+    }
+    UrlOptions option = new UrlOptions();
+    option.AddAspxExtension = false;
+    option.UseDisplayName = true;
+    option.LowercaseUrls = true;
+
+    string searchUrl = String.Format("{0}?{1}", LinkManager.GetItemUrl(blogHome, option), XBSettings.XBSearchQS);
+}
+
+<script type="text/javascript">
+    function SubmitFrm() {
+
+        var Searchtxt = document.getElementById("txtSearch").value;
+
+        if (Searchtxt != "") {
+            $('#txtSearchStatic').value = $('#txtSearch').value; //update the stay in place form
+            window.location = "@Html.Raw(searchUrl)=" + Searchtxt;
+        }
+    }
+
+    function tableInputKeyPress(e) {
+        e = e || window.event;
+        var key = e.keyCode;
+        if (key == 13) //Enter
+        {
+            e.preventDefault();
+            SubmitFrm();
+
+        }
+    }
+</script>
+
+<div class="col-xs-4 col-sm-4"><h1>@Html.Raw(HomeItem)</h1></div>
+<div class="col-xs-8 col-sm-8">
+    <form>
+        <div class="form-group" id="blogSearchContainer">
+            <input type="search" class="form-control" id="txtSearch" placeholder="@Html.Raw(settingsItem.SearchButtonValue)" onkeypress="tableInputKeyPress(event)">
+            <span class="fas fa-search" aria-hidden="true" aria-label="Search" onclick="SubmitFrm(event); return false;" id="blogSearchIcon"></span>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,981 @@
+﻿@import './variables.scss';
+
+.topBarLangCarrInvest {
+    font-size: 0.85rem;
+}
+
+.header-static {
+    background-color: #fff;
+}
+
+.container-wrapper {
+    padding: 0;
+    background-color: transparent;
+}
+
+#heroImage {
+    height: 250px;
+    width: 100%;
+    display: block;
+    background-image: url('/Components/XBlog Assets/Images/heroHeaderDefault.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 50px rgba(0,0,0,0.75);
+    font-family: $primaryFontStack;
+    background-position: center 25%;
+    background-attachment: fixed;
+
+    #heroForm {
+        padding-top: 150px;
+
+        h1 {
+            color: white;
+            font-size: 46px;
+            text-shadow: 0 0 3px rgba(0,0,0,0.5);
+        }
+
+        form {
+            padding-top: 30px;
+
+            input {
+                float: left;
+                box-shadow: 0 0 3px rgba(0,0,0,0.5);
+                padding-right: 40px;
+            }
+
+            .searchIcon {
+                margin-left: -40px;
+                margin-top: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.languageToggle {
+    display: flex;
+    flex-direction: row;
+
+    .langOption {
+        font-size: 13px;
+        text-transform: uppercase;
+        padding: .15rem .5rem;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        color: #999;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right-width: 0;
+        cursor: pointer;
+
+        &.active {
+            color: black;
+            box-shadow: inset 2px 2px 2px rgba(0,0,0,0.1);
+            background-color: #f4f4f4;
+        }
+
+        &#lnkFrench {
+            border-radius: 3px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            border-right-width: 1px;
+        }
+    }
+
+    &.en .en, &.fr .fr {
+        color: black;
+        box-shadow: inset 2px 2px 2px rgba(0,0,0,0.1);
+        background-color: #f4f4f4;
+    }
+}
+
+#blogSearchContainer {
+    &.form-group {
+        position: relative;
+
+        .fas.fa-search {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            padding: 5px;
+        }
+    }
+}
+
+#ChartWellBlog {
+    padding-left: 0;
+    padding-right: 0;
+
+    .logoEn img {
+        max-width: 185px;
+        margin: 0px 10px 10px 10px;
+        width: auto;
+    }
+
+    #ChartWellBlogTop {
+        height: 0;
+        overflow: hidden;
+        margin: 0 0 0 0;
+
+        form, form .form-group {
+            margin: 0;
+            width: 100%;
+
+            .searchIcon {
+                margin-top: 8px;
+                margin-left: -25px;
+                cursor: pointer;
+            }
+
+            #txtSearchStatic.form-control {
+                font-size: 0.9rem;
+                border-radius: 1px;
+                padding: .25rem .40px .25rem .5rem;
+                height: calc(2rem + 2px);
+                width: calc(100% - 40px);
+                float: left;
+            }
+        }
+    }
+
+    #ChartWellBlogNavContainer {
+        margin: 0;
+    }
+
+    #ChartWellBlogNav {
+        width: 100%;
+        z-index: 999;
+        display: block;
+        background-color: white;
+        transition: top .5s ease-in;
+        border-bottom: $standardBorder;
+        padding: 0;
+        display: flex;
+
+        .navbar-nav {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.3rem 0.55rem;
+            min-height: 40px;
+
+            .nav-link {
+                text-align: center;
+                color: black;
+                font-size: 14px;
+                line-height: 17px;
+                font-weight: bold;
+                padding-top: 7px;
+                padding-bottom: 7px;
+            }
+
+            &:hover {
+                box-shadow: inset 0 0 4px rgba(0,0,0,0.15);
+                background-color: $lightGray;
+
+                .nav-link {
+                    color: black;
+                    text-shadow: 1px 1px 0 white, -1px -1px 0 rgba(0,0,0,0.25);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    #ChartWellBlogBody {
+        font-family: $blogBodyFontStack;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 1rem 2rem;
+
+        @media screen and (max-width: $sm-BP) {
+            padding: 1rem;
+        }
+
+        @media screen and (max-width: $xs-sm-BP) {
+            padding: 1rem;
+        }
+
+
+        .isSearch {
+            padding: 4rem;
+            min-height: 800px;
+
+            .cwbPostsList {
+                margin-bottom: 2rem;
+            }
+
+            .searchListingPost {
+                margin-top: 2rem;
+
+                .cwbListPost {
+                    background-image: none !important;
+
+                    .cwbListPostContent h2 {
+                        font-size: 20px;
+                        margin-top: 1rem;
+                    }
+
+                    .tags, .categories {
+                        font-size: 14px;
+                        margin-top: 5px;
+
+                        a {
+                            color: black;
+                        }
+                    }
+
+                    .tags {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        #cwbFeatured #XB-Left {
+            background: #fff;
+            margin: 0 0 0 0;
+            max-width: 100%;
+            border-radius: 0;
+            box-shadow: none;
+        }
+
+        .cwbWidget {
+            padding-bottom: 15px;
+
+            .cwbWidgetPostsContainer {
+                background: transparent;
+                margin: 0;
+                padding: 0;
+                max-width: 100%;
+                border-radius: 0;
+                box-shadow: none;
+
+                &::-webkit-scrollbar {
+                    width: 10px;
+                    background-color: #F5F5F5;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: #666;
+                }
+
+                &::-webkit-scrollbar-track {
+                    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+                    background-color: #F5F5F5;
+                }
+
+                .cwbWidgetPost {
+                    padding: 1rem 0 1rem 0;
+                    background-color: white;
+
+                    .featuredArticleImg {
+                        width: 100%;
+                        display: block;
+                        padding-top: 50%;
+                        overflow: hidden;
+                        position: relative;
+
+                        img {
+                            width: 100%;
+                            max-width: 100% !important;
+                            border-radius: 0;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+
+                    p.featuredArticle {
+                        font-size: 12px;
+                        line-height: 16px;
+                        margin: 1rem 0 1rem 0;
+                    }
+
+                    a.featuredArticleLink {
+                        color: black;
+                        font-weight: bold;
+
+                        &:hover {
+                            color: $chartwellPrimary;
+                        }
+                    }
+                }
+
+
+                .carousel-item {
+                    display: block;
+                    float: none;
+                    margin-right: 0;
+                    overflow: auto;
+                    z-index: 1;
+                }
+
+                .carousel-control-prev, .carousel-control-next {
+                    display: none;
+                }
+
+                &.carousel.slide {
+                    .carousel-inner {
+                        width: calc(100% - 38%);
+                        margin: 0 auto;
+                    }
+
+                    .carousel-item {
+                        float: left;
+                        margin-right: -100%;
+                        overflow: auto;
+                        border-bottom: none;
+
+                        &:first-child {
+                            display: block;
+                        }
+
+                        &.active {
+                            z-index: 2;
+                        }
+
+                        &.active,
+                        &.carousel-item-next,
+                        &.carousel-item-prev {
+                            display: block;
+                        }
+                    }
+
+                    .carousel-control-prev, .carousel-control-next {
+                        display: flex;
+                    }
+                }
+            }
+
+            h3 {
+                font-size: 14px !important;
+                line-height: 14px !important;
+                text-transform: uppercase !important;
+                padding: 35px 15px 15px 5px !important;
+                border-bottom: $standardBorder !important;
+                margin-bottom: 0 !important;
+                font-weight: bold !important;
+            }
+        }
+
+        .shadow {
+            margin: 0;
+            padding: 0;
+            transition: margin 0.25s linear;
+            height: 540px;
+            box-shadow: none !important;
+
+            .cwbListPost {
+                max-height: 500px;
+                height: 500px;
+                overflow: hidden;
+                box-shadow: inset 3px 3px 5px rgba(0,0,0,0.15);
+                position: relative;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 50% 40%;
+                margin: 20px 20px;
+                box-shadow: 1px 2px 2px rgba(0,0,0,.25);
+                border: 0px solid white;
+                cursor: pointer;
+                //transition: margin 0.25s linear;
+                .cwbListPostContent {
+                    margin: 0;
+                    padding: 3% 8% 5% 8%;
+                    background-color: rgba(255,255,255,0.925);
+                    overflow: hidden;
+                    color: black;
+                    position: absolute;
+                    bottom: 10px;
+                    left: 0px;
+                    width: 100%;
+
+                    h2 {
+                        font-weight: bold;
+                        font-size: 1.35rem;
+                    }
+
+                    .previewText {
+                        color: black;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        font-size: 14px;
+                        font-weight: 100;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        margin: 1rem 0 0.5rem 0;
+                    }
+
+                    .tags, .readmore {
+                        display: none;
+                    }
+
+                    .categories {
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        border-top: 1px solid rgba(255,255,255,0.25);
+                        letter-spacing: 1px;
+                        padding-top: 10px;
+                    }
+
+                    a {
+                        color: black;
+                    }
+                }
+            }
+
+            &:hover {
+                .cwbListPost {
+                    margin-top: 5px;
+                    margin-bottom: 35px;
+                    box-shadow: 0px 20px 30px rgba(0,0,0,.25);
+                    transition: margin 0.25s linear;
+                }
+            }
+        }
+
+
+
+        .cwbPostDetail {
+            padding: 0 6rem 2rem 12rem;
+
+            .small {
+                font-size: 0.875rem;
+                font-weight: 100;
+            }
+
+            .articleAuthor, .articleDate {
+                display: inline-block;
+                margin-right: 1rem;
+            }
+
+            h1.articleHeadline {
+                margin: 2rem 0 2rem;
+                font-weight: bold;
+                font-size: 2.35rem;
+            }
+
+            p {
+                margin-top: 1rem;
+                margin-bottom: 0.5rem;
+                line-height: 1.95rem;
+
+                &.articleCategories {
+                    margin-top: 0;
+                }
+            }
+
+            .social {
+                list-style-type: none;
+                position: absolute;
+                left: 2.5rem;
+                top: 11rem;
+                padding-left: 1rem;
+
+                li {
+                    width: 40px;
+                    height: 40px;
+                    overflow: hidden;
+                    display: block;
+                    margin-bottom: 10px;
+
+                    .text {
+                        display: none;
+                    }
+                }
+            }
+
+            .articleBody, .articleTags {
+                margin-top: 2rem;
+            }
+
+            .articleTags a {
+                text-transform: capitalize;
+            }
+
+            .articleBody {
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                .cwbPostMainImage {
+                    display: block;
+                    width: 110%;
+                    margin-left: -5%;
+                    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+                    position: relative;
+                    overflow: hidden;
+                    margin-bottom: 2rem;
+
+                    img {
+                        position: absolute;
+                        top: -25%;
+                        left: 0;
+                        //bottom: 0;
+                        right: 0;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        #cwbContactForm {
+            position: relative;
+
+            .cwbContactFormFloater {
+                width: 100%;
+                position: absolute;
+                right: 0;
+            }
+        }
+
+        #RelatedPosts {
+            padding: 2rem 6rem 2rem 12rem;
+
+            h3 {
+                font-size: 14px !important;
+                line-height: 14px !important;
+                text-transform: uppercase !important;
+                padding: 35px 15px 15px 5px !important;
+                border-top: $standardBorder !important;
+                margin-bottom: 1rem !important;
+                font-weight: bold !important;
+                text-align: center;
+            }
+
+            .relatedPostsContainer {
+                .relatedPost {
+                    padding: 0 1.5rem;
+
+                    .postTitle {
+                        p {
+                            font-size: 0.825rem;
+                            line-height: 1rem;
+                        }
+
+                        h4 {
+                            margin-top: 1.5rem;
+                        }
+
+                        a {
+                            color: black;
+                        }
+                    }
+
+                    .postImage {
+                        display: block;
+                        width: 100%;
+                        padding-top: 56.25%; /* 16:9 Aspect Ratio */
+                        position: relative;
+                        overflow: hidden;
+
+                        img {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            bottom: 0;
+                            right: 0;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+
+            a, span {
+                display: inline-flex;
+                padding: .5rem .75rem;
+                min-width: 3rem;
+                text-align: center;
+                border: $standardBorder;
+                justify-content: center;
+                margin-left: -1px;
+                font-size: 0.9rem;
+                color: $darkestGray;
+            }
+
+            span {
+                color: black;
+                font-weight: bold;
+                background-color: $lightestGray;
+                box-shadow: inset 2px 2px 6px rgba(0,0,0,0.5);
+                border: 0;
+            }
+
+            a:hover, a:active {
+                text-decoration: none;
+                color: black;
+                background-color: $lightGray;
+                text-shadow: 1px 1px 0 white, -1px -1px 0 rgba(0,0,0,0.25);
+            }
+        }
+    }
+    //when #ChartWellBlog is sticky
+    &.sticky {
+        #ChartWellBlogBody {
+            margin-top: 180px;
+
+            #cwbContactForm {
+                .cwbContactFormFloater {
+                    &.isSticky {
+                        //padding-top: 140px;
+                    }
+                }
+            }
+        }
+
+        #ChartWellBlogTop {
+            height: 75px;
+            padding: .5rem 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            z-index: 9999;
+            display: flex;
+
+            .vert-align-mid {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        #ChartWellBlogNav {
+            position: fixed;
+            top: 74px;
+            left: 0;
+            width: 100%;
+            transition: top .5s ease-in;
+            border-bottom-width: 0px;
+            background-color: $lightestGray;
+            border-top: $standardBorder;
+            border-bottom: $standardBorder;
+            box-shadow: 0 4px 2px rgba(0,0,0,0.1);
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    #nearResidenceId.nearestResidencesTopRight {
+        margin-bottom: 35px;
+    }
+
+    .sticky {
+        #ChartWellBlogBody {
+            #cwbContactForm {
+                .cwbContactFormFloater {
+                    &.isSticky {
+                        padding-top: 100px;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    #ChartWellBlog.sticky #ChartWellBlogBody {
+        margin-top: 135px;
+    }
+
+    #ChartWellBlog #ChartWellBlogNav .nav-item .nav-link {
+        font-size: 13px;
+        font-weight: normal;
+        padding: .25rem;
+        font-family: $navAlternateStack !important;
+    }
+
+    #ChartWellBlog #ChartWellBlogBody #RelatedPosts {
+        padding: 4rem;
+    }
+
+    #ChartWellBlog #ChartWellBlogBody .cwbPostDetail {
+        padding: 2rem 4rem;
+
+        .social {
+            position: relative;
+            left: auto;
+            top: auto;
+            padding: 0;
+            margin-top: 2rem;
+
+            li {
+                display: inline-block;
+            }
+        }
+    }
+
+    .searchGradient .row .col-md-12 {
+        .col-md-2, .col-md-3, .col-md-4 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    #ChartWellBlog .logoEn img {
+        width: auto !important;
+    }
+
+    #nearResidenceId.nearestResidencesTopRight {
+        margin-bottom: 0px;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        justify-content: start !important;
+    }
+
+    #ChartWellBlog #ChartWellBlogNavContainer {
+        width: 80px;
+        float: left;
+    }
+
+    #ChartWellBlog.sticky #ChartWellBlogNavContainer {
+        z-index: 1;
+        margin: 0 0 0 0;
+        width: 80px;
+    }
+
+    #ChartWellBlog #ChartWellBlogNav, #ChartWellBlog.sticky #ChartWellBlogNav {
+        height: calc(100%);
+        width: 80px;
+        border-bottom: 0;
+    }
+
+
+    #ChartWellBlog #ChartWellBlogNav {
+        background-color: transparent;
+    }
+
+    #ChartWellBlogTop {
+        border-bottom: 1px solid #dfdfdf;
+        background-color: white;
+        margin: 0 0 0 0;
+    }
+
+    #ChartWellBlog #ChartWellBlogNav {
+        width: 80px;
+        border-right: $standardBorder;
+        border-top: 0px solid transparent;
+        height: calc(100% - 75px);
+    }
+
+    #ChartWellBlog #ChartWellBlogNav .nav-item {
+        border-top: 1px solid white;
+        border-bottom: 1px solid #dfdfdf;
+    }
+
+    #ChartWellBlog #ChartWellBlogNav .nav-item .nav-link {
+        font-size: 12px;
+        padding: 0.25rem .5rem;
+        font-weight: 400;
+    }
+
+    #ChartWellBlog #ChartWellBlogBody {
+        position: relative;
+        margin-top: 0px;
+        margin-left: 79px;
+        width: calc(100% - 80px);
+        border-left: 1px solid #dfdfdf;
+
+        #cwbContactForm {
+            padding: 2rem;
+
+            .cwbContactFormFloater {
+                position: relative;
+            }
+        }
+    }
+
+    #ChartWellBlog.sticky #ChartWellBlogBody {
+        margin-top: 40px;
+    }
+
+    .cwbWidget h3 {
+        font-size: 16px;
+        padding: 25px 15px 15px 0px;
+    }
+
+    .cwbWidget .cwbWidgetPostsContainer {
+        padding: 0 10px;
+        max-height: 55vh;
+        overflow-y: scroll;
+        border-bottom: 1px solid #dfdfdf;
+        border-left: 1px solid #dfdfdf;
+    }
+
+    .relatedPost {
+        margin-bottom: 2rem;
+    }
+
+    footer.container-fluid {
+        margin-left: 80px !important;
+        width: calc(100% - 80px);
+    }
+}
+
+@media screen and (max-width: 575px) {
+    :root, body {
+        font-size: 14px;
+    }
+
+    #ChartWellBlog .logoEn {
+        width: 49px;
+        margin-left: -3px;
+        overflow: hidden;
+        display: block;
+        margin-top: 2px;
+    }
+
+    #ChartWellBlog .logoEn img {
+        width: 135px !important;
+    }
+
+    #ChartWellBlog.sticky #ChartWellBlogTop {
+        height: 60px;
+    }
+
+    #ChartWellBlog.sticky #ChartWellBlogNav {
+        top: 59px;
+    }
+
+    #ChartWellBlog #ChartWellBlogNav .nav-item {
+        height: auto;
+        min-height: 40px;
+    }
+
+    #ChartWellBlog.sticky #ChartWellBlogNav {
+        height: calc(100% - 60px);
+    }
+
+    #ChartWellBlog.sticky #ChartWellBlogBody {
+        margin-top: 65px;
+    }
+
+    #ChartWellBlog #ChartWellBlogBody #RelatedPosts, {
+        padding: 0.5rem;
+    }
+
+    .isSearch {
+        padding: 1.5rem !important;
+        min-height: 0 !important;
+    }
+
+    #ChartWellBlog #ChartWellBlogBody .cwbPostDetail {
+        padding: 0.5rem;
+
+        .social, .articleBody, .articleTags {
+            margin-top: 1rem;
+        }
+
+        h1.articleHeadline {
+            margin: 2rem 0 1rem;
+            font-size: 1.5rem;
+        }
+
+        p {
+            margin-top: 1.25rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.75rem;
+        }
+    }
+
+    #heroImage #heroForm {
+        padding-top: 70px;
+    }
+
+    footer {
+        margin-left: 80px !important;
+    }
+
+    body.fr #heroImage #heroForm h1 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    #ChartWellBlog #ChartWellBlogBody .shadow .cwbListPost {
+        max-height: 500px;
+        height: 500px;
+        overflow: hidden;
+        box-shadow: inset 3px 3px 5px rgba(0,0,0,0.15);
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        margin: 15px 15px;
+        box-shadow: 0px 10px 29px rgba(0,0,0,.25);
+        border: 0px solid white;
+
+        &:hover {
+            margin-top: 5px;
+            margin-bottom: 25px;
+            box-shadow: 0px 20px 19px rgba(0,0,0,.25);
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    #ChartWellBlog .cwb-col-xl-4 {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}
+
+
+//ie10 specific
+
+html[data-useragent*='MSIE 10.0'] {
+    #ChartWellBlogNavContainer {
+        clear: both;
+    }
+
+    .cwbContactFormFloater.isSticky {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 767px) {
+        #ChartWellBlog #ChartWellBlogTop form, #ChartWellBlog #ChartWellBlogTop form .form-group {
+            margin-top: 15px;
+        }
+
+        #ChartWellBlog #ChartWellBlogNav .nav-item {
+            display: block;
+            width: 100%;
+
+            a.nav-link {
+                padding: 0;
+                width: 100%;
+            }
+        }
+    }
+}

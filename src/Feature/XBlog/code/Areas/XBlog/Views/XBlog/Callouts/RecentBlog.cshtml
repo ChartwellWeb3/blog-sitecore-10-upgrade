@@ -1,0 +1,65 @@
+﻿@using Sitecore.Feature.XBlog.Areas.XBlog.Items.Blog
+@using Sitecore.Feature.XBlog.Areas.XBlog.Search
+@using Sitecore.Feature.XBlog.Areas.XBlog.General
+@using Sitecore.Data.Items
+@using Sitecore.Mvc
+@using Sitecore.Resources.Media
+@using Sitecore.Links
+@using X.PagedList
+@using X.PagedList.Mvc
+@inherits System.Web.Mvc.WebViewPage
+
+@{
+    Item dataSourceItem = Sitecore.Context.Database.GetItem("/sitecore/content/Chartwell/Project/blog");
+    BlogSettings settingsItem = DataManager.GetBlogSettingsItem(dataSourceItem != null ? dataSourceItem : Sitecore.Context.Item);
+      Sitecore.Links.UrlOptions options = new Sitecore.Links.UrlOptions();
+
+    options.LanguageEmbedding = Sitecore.Links.LanguageEmbedding.Always;
+    options.LanguageLocation = Sitecore.Links.LanguageLocation.FilePath;
+    options.UseDisplayName = true;
+    options.LowercaseUrls = true;
+}
+
+<div id='@Html.Raw(settingsItem.PrimaryCSSID)-RecentBlog'>
+    <h2>@Html.Sitecore().Field(BlogSettings.RecentBlogTitleFieldId, settingsItem.InnerItem)</h2>
+    <hr size="1" />
+    @{
+        //Get search results
+
+        int maximumRows = 2;
+        int startRowIndex = 0;
+        bool maximumRowsResult = false;
+        int blogPostCount = 0;
+        if (!String.IsNullOrEmpty(settingsItem.RecentBlogMaxPosts))
+        {
+            maximumRowsResult = Int32.TryParse(settingsItem.RecentBlogMaxPosts, out maximumRows);
+        }
+        if (!maximumRowsResult)
+        {
+            maximumRows = 2;
+        }
+
+
+        IPagedList<BlogPost> blogs = BlogManager.GetBlogPosts(1, "", "", "", startRowIndex, maximumRows, ref blogPostCount);
+
+        if (blogs != null && blogs.Any())
+        {
+
+            <div id="cwBlogRecentPosts"  class="row">
+                @foreach (BlogPost blogPost in blogs)
+                {
+                    <div class="cwbRecentPost col-xs-12 col-md-4" itemprop="headline">
+                        <h3><a target="_blank" href="@Html.Raw(LinkManager.GetItemUrl(blogPost.InnerItem,options))">@Html.Raw(blogPost.Title)</a></h3>
+                        <!-- exererpt copy  -->
+                        <p style="line-height: 20px; margin-top: 10px">
+                            @Html.Raw(Sitecore.Feature.XBlog.Areas.XBlog.Helpers.Helper.SafeSubstring(blogPost.Body, settingsItem.DisplaySummaryLength));
+                        </p>
+                        <!--<a class="btn btn-primary  read-more" href="@Html.Raw(LinkManager.GetItemUrl(blogPost.InnerItem,options))">Continue reading</a>-->
+                    </div>
+                }
+            </div>
+
+        }
+    }
+
+</div>

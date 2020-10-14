@@ -1,0 +1,211 @@
+﻿@using Sitecore.Mvc
+@using System.Web.Mvc.Html
+@inherits System.Web.Mvc.WebViewPage
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    @Html.Sitecore().Placeholder("xbloghead")
+    <title></title>
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" href="~/Assets/Images/Layout/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="~/Assets/Images/Layout/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="~/Assets/Images/Layout/favicon-192x192.png" sizes="192x192" />
+    <link rel="icon" type="image/png" href="~/Assets/Images/Layout/favicon-32x32.png" sizes="32x32" />
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Lato|Montserrat|Open+Sans|Open+Sans+Condensed:300|Quicksand" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+    <script src="~/Assets/js/vendor.js"></script>
+    <link href="~/Assets/Styles/vendor.css" rel="stylesheet" />
+    <link href="~/Assets/Styles/chartwell.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/Components/XBlog Assets/Style/cwBlog.css" media="all" />
+
+    <script src="/Components/XBlog Assets/JS/RRSSB/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="~/Components/XBlog Assets/JS/stickyfloat.js"></script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-56FVJBX');</script>
+    <!-- End Google Tag Manager -->
+
+
+</head>
+<body class="@Sitecore.Context.Language.ToString()" id="BlogResponsiveLayout">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56FVJBX"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <script type="text/javascript">
+        function SubmitFrm() {
+            var Searchtxt = document.getElementById("txtSearch").value;
+            if (Searchtxt != "") {
+                window.location = "/en/searchterm/" + Searchtxt;
+            }
+        }
+    </script>
+    <header class="header-static" id="cwbHeader">
+        @Html.Sitecore().Placeholder("Page.Banner")
+        @Html.Sitecore().Placeholder("Page.SearchBar")
+        @Html.Sitecore().Placeholder("Page.Header")
+    </header>
+
+    <div id="heroImage">
+        <div class="container" id="heroForm">
+            <div class="row">
+                @Html.Sitecore().Placeholder("xBlog.Search")
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" id="ChartWellBlog">
+        <div class="row" id="ChartWellBlogTop">
+            <div class="col-sm-3 col-md-4">
+                <a href="/" class="logoEn" id="chartwellLogo">
+                    @if (Sitecore.Context.Language.ToString() == "en")
+                    {
+                        <img src="~/Assets/Images/Layout/chart-logo-2014.png" alt="Chartwell retirement residences" />
+                    }
+                    else
+                    {
+                        <img src="~/Assets/Images/Layout/chart-logo-2014-fr.png" alt="Chartwell résidences pour retraités" />
+                    }
+                </a>
+            </div>
+            <div class="col-sm-7 col-md-6 vert-align-mid">
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" id="txtSearchStatic" placeholder="">
+                        <span class="fas fa-search searchIcon" aria-hidden="true" aria-label="Search" onclick="updateValuesAndSubmit(); return false;"></span>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-2 col-md-2 vert-align-mid">
+                <div class="languageToggle @Sitecore.Context.Language" aria-label="Choose a language">
+                    @Html.Sitecore().Placeholder("Page.Blog.Language")
+                </div>
+
+            </div>
+        </div>
+        <div class="row" id="ChartWellBlogNavContainer">
+
+            <nav class="navbar navbar-expand-lg navbar-light" id="ChartWellBlogNav">
+
+                <ul class="navbar-nav nav-fill">
+                    @Html.Sitecore().Placeholder("xblogmenu")
+                </ul>
+
+            </nav>
+
+        </div>
+        <div class="row" id="ChartWellBlogBody">
+            @Html.Sitecore().Placeholder("xblogGrid")
+        </div>
+    </div>
+    <footer class="container-fluid hidden-print" id="cwbSiteFooter">
+        @Html.Sitecore().Placeholder("Page.Footer")
+    </footer>
+
+    <script>
+    //Don't use jQuery unless you have to
+    var formOffSet = 0;
+    window.onscroll = function () {
+        formOffSet = document.getElementById('GeneralContactForm').getBoundingClientRect().top;
+        console.log(formOffSet);
+        blogNav();
+    };
+    window.onload = function () {
+        var doc = document.documentElement;
+        doc.setAttribute('data-useragent', navigator.userAgent);
+
+        document.getElementById('txtSearchStatic').placeholder = document.getElementById('txtSearch').placeholder;
+        placeContactForm();
+        blogNav();
+        //setHeroBackground();
+    };
+    window.onresize = function () {
+        placeContactForm();
+        blogNav();
+    };
+
+    var navbar = document.getElementById("ChartWellBlog");
+    var sticky = navbar.offsetTop;
+    var formHeight = document.getElementById('GeneralContactForm').clientHeight;
+    console.log('fh:' + formHeight);
+
+    function blogNav() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky");
+            document.getElementById('cwbSiteFooter').classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+            document.getElementById('cwbSiteFooter').classList.remove("sticky");
+        }
+    }
+
+    function setHeroBackground() {
+        var randomClass = 'test' + (Math.floor(Math.random() * Math.floor(4)) + 1);
+        document.getElementById('heroImage').classList.add(randomClass);
+    }
+
+    function placeContactForm() {
+
+        var formWidth = document.getElementById('cwbContactForm').clientWidth + "px;";
+        console.log("fw:" + formWidth);
+        document.getElementById('cwbContactForm').style.height = "auto";
+        document.getElementById('GeneralContactForm').setAttribute('style','width='+formWidth);
+        document.getElementsByClassName('cwbContactFormFloater')[0].classList.remove('isSticky');
+
+        var headerHeight = document.getElementById('ChartWellBlogNav').offsetHeight + 75; // 75 is document.getElementById('ChartWellBlogTop').offsetHeight when it's visible
+        var formHeight = document.getElementsByClassName('cwbContactFormFloater')[0].offsetHeight;
+        var viewportHeight = window.innerHeight > document.documentElement.clientHeight ? window.innerHeight : document.documentElement.clientHeight;
+
+        var isTallEnough = formHeight + headerHeight < viewportHeight ? true : false;
+        console.log("tall enough ? " + isTallEnough);
+        /* 
+        console.log("header height: " + headerHeight);
+        console.log("form height: " + formHeight);
+        console.log("viewport height: " + viewportHeight);
+        console.log("contact form height: " + document.getElementsByClassName('cwbContactFormFloater')[0].offsetHeight)+10;
+        console.log("client height:" + document.documentElement.clientHeight);
+
+        console.log("difference:" + (viewportHeight - (formHeight + headerHeight)));
+        */
+
+        if (isTallEnough && document.documentElement.clientWidth > 768) {
+            document.getElementsByClassName('cwbContactFormFloater')[0].classList.add('isSticky');
+            document.getElementById('cwbContactForm').setAttribute("style", 'height:' + $('#ChartWellBlogBody').height() + 'px');
+
+            //$('#ChartWellBlog #ChartWellBlogBody #cwbContactForm').css('height', $('#ChartWellBlogBody').height() + 'px');
+            $('#cwbContactForm .cwbContactFormFloater').stickyfloat({ duration: 0 });
+        }
+
+
+    }
+
+    function updateValuesAndSubmit() {
+        document.getElementById('txtSearch').value = document.getElementById('txtSearchStatic').value; //update the form in the hero image
+        SubmitFrm();
+    }
+
+    //dont add any more self executing javascript here. create a function and add it to the window.onload ^^ up there
+
+    </script>
+    <script src="~/Assets/js/chartwell.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+﻿@using Sitecore.Mvc
+@using System.Web.Mvc.Html
+@inherits System.Web.Mvc.WebViewPage
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    @Html.Sitecore().Placeholder("xbloghead")
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none'" />
+    <link rel="icon" type="image/png" href="~/Assets/Images/Layout/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="~/Assets/Images/Layout/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="~/Assets/Images/Layout/favicon-192x192.png" sizes="192x192" />
+    <link rel="icon" type="image/png" href="~/Assets/Images/Layout/favicon-32x32.png" sizes="32x32" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Lato|Montserrat|Open+Sans|Open+Sans+Condensed:300|Quicksand" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+    <script src="~/Assets/js/vendor.js"></script>
+
+    <link href="~/Assets/Styles/vendor.css" rel="stylesheet" />
+    <link href="~/Assets/Styles/chartwell.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/Components/XBlog Assets/Style/cwBlog.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/Components/XBlog Assets/Style/cwBlog-adaptive.css" media="all" />
+    <link href="~/Assets/Styles/chartwell-mobile.css" rel="stylesheet" />
+
+    <!--
+    <script src="/Components/XBlog Assets/JS/RRSSB/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="~/Components/XBlog Assets/JS/stickyfloat.js"></script>
+    -->
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-56FVJBX');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body class="cwBody mobile-view blog-mobile-view @Sitecore.Context.Language.ToString()" id="BlogMobileLayout">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56FVJBX"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="cwbHeader"> <!-- don't delete this ID. This is for analytics -->
+        @Html.Sitecore().Placeholder("Page.MobileHeader")
+    </div>
+    <div id="MobileBlogHeader">
+        <button type="button" class="navbar-toggle collapsed mobileToggle btn btn-primary" data-toggle="collapse" data-parent="#PageHeader" data-target="#MobileBlogMenu" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="fas fa-bars" aria-label="Toggle navigation"></span>
+        </button>
+        <div id="MobileHeaderContainer">
+            @Html.Sitecore().Placeholder("xBlog.Search")
+        </div>
+        <div class="collapse navbar-collapse" id="MobileBlogMenu">
+            <ul class="nav navbar-nav">
+                @Html.Sitecore().Placeholder("xblogmenu")
+            </ul>
+        </div>
+    </div>
+    <div id="ChartWellBlog">
+        <div id="ChartWellBlogBody">
+            @Html.Sitecore().Placeholder("Page.RecentlyViewed")
+            @Html.Sitecore().Placeholder("xblogGrid")
+        </div>
+    </div>
+
+    <div id="cwbSiteFooter">
+        @Html.Sitecore().Placeholder("Page.MobileFooter")
+    </div>
+
+
+    <script src="~/Assets/js/chartwell.js"></script>
+
+
+</body>
+</html>

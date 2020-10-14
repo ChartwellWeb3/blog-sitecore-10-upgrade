@@ -1,0 +1,3317 @@
+:root, body {
+  font-size: 16px; }
+
+a {
+  color: #0072bc; }
+  a:hover {
+    color: #23527c; }
+
+#TimeOfDayForVisit {
+  height: auto !important; }
+
+.topBarLangCarrInvest {
+  font-size: 0.85rem; }
+
+.header-static {
+  background-color: #fff; }
+
+#cwbHeader .nav.navbar-nav {
+  display: flex;
+  justify-content: flex-start; }
+  #cwbHeader .nav.navbar-nav li {
+    font-size: 0.9625rem;
+    font-weight: 600; }
+
+.container-wrapper {
+  padding: 0;
+  background-color: transparent; }
+
+#heroImage {
+  height: 250px;
+  width: 100%;
+  display: block;
+  background-image: url("/Components/XBlog Assets/Images/heroHeaderDefault.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.75);
+  font-family: "Montserrat", sans-serif;
+  background-position: center 25%;
+  /*
+  &.test1 {
+    background-image: url('/Components/XBlog Assets/Images/fotolia_50451541.jpg');   
+    background-position: center 32%; 
+  }
+  &.test2 {
+    background-image: url('/Components/XBlog Assets/Images/fotolia_195531677.jpg'); 
+    background-position: center 63%;   
+  }
+  &.test3 {
+    background-image: url('/Components/XBlog Assets/Images/fotolia_207322464.jpg');  
+    background-position: center 53%;  
+  }
+  &.test4 {
+    background-image: url('/Components/XBlog Assets/Images/fotolia_242505452.jpg'); 
+    background-position: center 25%;   
+  }
+  &.test5 {
+    background-image: url('/Components/XBlog Assets/Images/fotolia_49815722.jpg');  
+    background-position: center 39%;  
+  }
+  */ }
+  #heroImage #heroForm {
+    padding-top: 150px; }
+    #heroImage #heroForm h1 {
+      color: white;
+      font-size: 55px;
+      text-shadow: 0 0 3px rgba(0, 0, 0, 0.5); }
+    #heroImage #heroForm form {
+      padding-top: 30px; }
+      #heroImage #heroForm form input {
+        float: left;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+        padding-right: 40px; }
+      #heroImage #heroForm form .searchIcon {
+        margin-left: -40px;
+        margin-top: 5px;
+        cursor: pointer; }
+
+.languageToggle {
+  display: flex;
+  flex-direction: row; }
+  .languageToggle .langOption {
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: .15rem .5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #999;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right-width: 0;
+    cursor: pointer; }
+    .languageToggle .langOption.active {
+      color: black;
+      box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.1);
+      background-color: #f4f4f4; }
+    .languageToggle .langOption#lnkFrench {
+      border-radius: 3px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-right-width: 1px; }
+
+#ChartWellBlog {
+  /*!
+   * Bootstrap Grid v4.2.1 (https://getbootstrap.com/)
+   * Copyright 2011-2018 The Bootstrap Authors
+   * Copyright 2011-2018 Twitter, Inc.
+   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+   */
+  /*# sourceMappingURL=bootstrap-grid.css.map */
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "Montserrat", sans-serif; }
+  #ChartWellBlog html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar; }
+  #ChartWellBlog *,
+  #ChartWellBlog *::before,
+  #ChartWellBlog *::after {
+    box-sizing: inherit; }
+  #ChartWellBlog .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; }
+  @media (min-width: 576px) {
+    #ChartWellBlog .container {
+      max-width: 540px; } }
+  @media (min-width: 768px) {
+    #ChartWellBlog .container {
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    #ChartWellBlog .container {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    #ChartWellBlog .container {
+      max-width: 1140px; } }
+  #ChartWellBlog .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; }
+  #ChartWellBlog .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px; }
+  #ChartWellBlog .no-gutters {
+    margin-right: 0;
+    margin-left: 0; }
+  #ChartWellBlog .no-gutters > .col,
+  #ChartWellBlog .no-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0; }
+  #ChartWellBlog .col-1, #ChartWellBlog .col-2, #ChartWellBlog .col-3, #ChartWellBlog .col-4, #ChartWellBlog .col-5, #ChartWellBlog .col-6, #ChartWellBlog .col-7, #ChartWellBlog .col-8, #ChartWellBlog .col-9, #ChartWellBlog .col-10, #ChartWellBlog .col-11, #ChartWellBlog .col-12, #ChartWellBlog .col,
+  #ChartWellBlog .col-auto, #ChartWellBlog .col-sm-1, #ChartWellBlog .col-sm-2, #ChartWellBlog .col-sm-3, #ChartWellBlog .col-sm-4, #ChartWellBlog .col-sm-5, #ChartWellBlog .col-sm-6, #ChartWellBlog .col-sm-7, #ChartWellBlog .col-sm-8, #ChartWellBlog .col-sm-9, #ChartWellBlog .col-sm-10, #ChartWellBlog .col-sm-11, #ChartWellBlog .col-sm-12, #ChartWellBlog .col-sm,
+  #ChartWellBlog .col-sm-auto, #ChartWellBlog .col-md-1, #ChartWellBlog .col-md-2, #ChartWellBlog .col-md-3, #ChartWellBlog .col-md-4, #ChartWellBlog .col-md-5, #ChartWellBlog .col-md-6, #ChartWellBlog .col-md-7, #ChartWellBlog .col-md-8, #ChartWellBlog .col-md-9, #ChartWellBlog .col-md-10, #ChartWellBlog .col-md-11, #ChartWellBlog .col-md-12, #ChartWellBlog .col-md,
+  #ChartWellBlog .col-md-auto, #ChartWellBlog .col-lg-1, #ChartWellBlog .col-lg-2, #ChartWellBlog .col-lg-3, #ChartWellBlog .col-lg-4, #ChartWellBlog .col-lg-5, #ChartWellBlog .col-lg-6, #ChartWellBlog .col-lg-7, #ChartWellBlog .col-lg-8, #ChartWellBlog .col-lg-9, #ChartWellBlog .col-lg-10, #ChartWellBlog .col-lg-11, #ChartWellBlog .col-lg-12, #ChartWellBlog .col-lg,
+  #ChartWellBlog .col-lg-auto, #ChartWellBlog .col-xl-1, #ChartWellBlog .col-xl-2, #ChartWellBlog .col-xl-3, #ChartWellBlog .col-xl-4, #ChartWellBlog .col-xl-5, #ChartWellBlog .col-xl-6, #ChartWellBlog .col-xl-7, #ChartWellBlog .col-xl-8, #ChartWellBlog .col-xl-9, #ChartWellBlog .col-xl-10, #ChartWellBlog .col-xl-11, #ChartWellBlog .col-xl-12, #ChartWellBlog .col-xl,
+  #ChartWellBlog .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px; }
+  #ChartWellBlog .col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%; }
+  #ChartWellBlog .col-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: auto;
+    max-width: 100%; }
+  #ChartWellBlog .col-1 {
+    -ms-flex: 0 0 8.333333%;
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%; }
+  #ChartWellBlog .col-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%; }
+  #ChartWellBlog .col-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%; }
+  #ChartWellBlog .col-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%; }
+  #ChartWellBlog .col-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%; }
+  #ChartWellBlog .col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%; }
+  #ChartWellBlog .col-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%; }
+  #ChartWellBlog .col-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%; }
+  #ChartWellBlog .col-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%; }
+  #ChartWellBlog .col-10 {
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%; }
+  #ChartWellBlog .col-11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%; }
+  #ChartWellBlog .col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%; }
+  #ChartWellBlog .order-first {
+    -ms-flex-order: -1;
+    order: -1; }
+  #ChartWellBlog .order-last {
+    -ms-flex-order: 13;
+    order: 13; }
+  #ChartWellBlog .order-0 {
+    -ms-flex-order: 0;
+    order: 0; }
+  #ChartWellBlog .order-1 {
+    -ms-flex-order: 1;
+    order: 1; }
+  #ChartWellBlog .order-2 {
+    -ms-flex-order: 2;
+    order: 2; }
+  #ChartWellBlog .order-3 {
+    -ms-flex-order: 3;
+    order: 3; }
+  #ChartWellBlog .order-4 {
+    -ms-flex-order: 4;
+    order: 4; }
+  #ChartWellBlog .order-5 {
+    -ms-flex-order: 5;
+    order: 5; }
+  #ChartWellBlog .order-6 {
+    -ms-flex-order: 6;
+    order: 6; }
+  #ChartWellBlog .order-7 {
+    -ms-flex-order: 7;
+    order: 7; }
+  #ChartWellBlog .order-8 {
+    -ms-flex-order: 8;
+    order: 8; }
+  #ChartWellBlog .order-9 {
+    -ms-flex-order: 9;
+    order: 9; }
+  #ChartWellBlog .order-10 {
+    -ms-flex-order: 10;
+    order: 10; }
+  #ChartWellBlog .order-11 {
+    -ms-flex-order: 11;
+    order: 11; }
+  #ChartWellBlog .order-12 {
+    -ms-flex-order: 12;
+    order: 12; }
+  #ChartWellBlog .offset-1 {
+    margin-left: 8.333333%; }
+  #ChartWellBlog .offset-2 {
+    margin-left: 16.666667%; }
+  #ChartWellBlog .offset-3 {
+    margin-left: 25%; }
+  #ChartWellBlog .offset-4 {
+    margin-left: 33.333333%; }
+  #ChartWellBlog .offset-5 {
+    margin-left: 41.666667%; }
+  #ChartWellBlog .offset-6 {
+    margin-left: 50%; }
+  #ChartWellBlog .offset-7 {
+    margin-left: 58.333333%; }
+  #ChartWellBlog .offset-8 {
+    margin-left: 66.666667%; }
+  #ChartWellBlog .offset-9 {
+    margin-left: 75%; }
+  #ChartWellBlog .offset-10 {
+    margin-left: 83.333333%; }
+  #ChartWellBlog .offset-11 {
+    margin-left: 91.666667%; }
+  @media (min-width: 576px) {
+    #ChartWellBlog .col-sm {
+      -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      max-width: 100%; }
+    #ChartWellBlog .col-sm-auto {
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      width: auto;
+      max-width: 100%; }
+    #ChartWellBlog .col-sm-1 {
+      -ms-flex: 0 0 8.333333%;
+      flex: 0 0 8.333333%;
+      max-width: 8.333333%; }
+    #ChartWellBlog .col-sm-2 {
+      -ms-flex: 0 0 16.666667%;
+      flex: 0 0 16.666667%;
+      max-width: 16.666667%; }
+    #ChartWellBlog .col-sm-3 {
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%; }
+    #ChartWellBlog .col-sm-4 {
+      -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%; }
+    #ChartWellBlog .col-sm-5 {
+      -ms-flex: 0 0 41.666667%;
+      flex: 0 0 41.666667%;
+      max-width: 41.666667%; }
+    #ChartWellBlog .col-sm-6 {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%; }
+    #ChartWellBlog .col-sm-7 {
+      -ms-flex: 0 0 58.333333%;
+      flex: 0 0 58.333333%;
+      max-width: 58.333333%; }
+    #ChartWellBlog .col-sm-8 {
+      -ms-flex: 0 0 66.666667%;
+      flex: 0 0 66.666667%;
+      max-width: 66.666667%; }
+    #ChartWellBlog .col-sm-9 {
+      -ms-flex: 0 0 75%;
+      flex: 0 0 75%;
+      max-width: 75%; }
+    #ChartWellBlog .col-sm-10 {
+      -ms-flex: 0 0 83.333333%;
+      flex: 0 0 83.333333%;
+      max-width: 83.333333%; }
+    #ChartWellBlog .col-sm-11 {
+      -ms-flex: 0 0 91.666667%;
+      flex: 0 0 91.666667%;
+      max-width: 91.666667%; }
+    #ChartWellBlog .col-sm-12 {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+    #ChartWellBlog .order-sm-first {
+      -ms-flex-order: -1;
+      order: -1; }
+    #ChartWellBlog .order-sm-last {
+      -ms-flex-order: 13;
+      order: 13; }
+    #ChartWellBlog .order-sm-0 {
+      -ms-flex-order: 0;
+      order: 0; }
+    #ChartWellBlog .order-sm-1 {
+      -ms-flex-order: 1;
+      order: 1; }
+    #ChartWellBlog .order-sm-2 {
+      -ms-flex-order: 2;
+      order: 2; }
+    #ChartWellBlog .order-sm-3 {
+      -ms-flex-order: 3;
+      order: 3; }
+    #ChartWellBlog .order-sm-4 {
+      -ms-flex-order: 4;
+      order: 4; }
+    #ChartWellBlog .order-sm-5 {
+      -ms-flex-order: 5;
+      order: 5; }
+    #ChartWellBlog .order-sm-6 {
+      -ms-flex-order: 6;
+      order: 6; }
+    #ChartWellBlog .order-sm-7 {
+      -ms-flex-order: 7;
+      order: 7; }
+    #ChartWellBlog .order-sm-8 {
+      -ms-flex-order: 8;
+      order: 8; }
+    #ChartWellBlog .order-sm-9 {
+      -ms-flex-order: 9;
+      order: 9; }
+    #ChartWellBlog .order-sm-10 {
+      -ms-flex-order: 10;
+      order: 10; }
+    #ChartWellBlog .order-sm-11 {
+      -ms-flex-order: 11;
+      order: 11; }
+    #ChartWellBlog .order-sm-12 {
+      -ms-flex-order: 12;
+      order: 12; }
+    #ChartWellBlog .offset-sm-0 {
+      margin-left: 0; }
+    #ChartWellBlog .offset-sm-1 {
+      margin-left: 8.333333%; }
+    #ChartWellBlog .offset-sm-2 {
+      margin-left: 16.666667%; }
+    #ChartWellBlog .offset-sm-3 {
+      margin-left: 25%; }
+    #ChartWellBlog .offset-sm-4 {
+      margin-left: 33.333333%; }
+    #ChartWellBlog .offset-sm-5 {
+      margin-left: 41.666667%; }
+    #ChartWellBlog .offset-sm-6 {
+      margin-left: 50%; }
+    #ChartWellBlog .offset-sm-7 {
+      margin-left: 58.333333%; }
+    #ChartWellBlog .offset-sm-8 {
+      margin-left: 66.666667%; }
+    #ChartWellBlog .offset-sm-9 {
+      margin-left: 75%; }
+    #ChartWellBlog .offset-sm-10 {
+      margin-left: 83.333333%; }
+    #ChartWellBlog .offset-sm-11 {
+      margin-left: 91.666667%; } }
+  @media (min-width: 768px) {
+    #ChartWellBlog .col-md {
+      -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      max-width: 100%; }
+    #ChartWellBlog .col-md-auto {
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      width: auto;
+      max-width: 100%; }
+    #ChartWellBlog .col-md-1 {
+      -ms-flex: 0 0 8.333333%;
+      flex: 0 0 8.333333%;
+      max-width: 8.333333%; }
+    #ChartWellBlog .col-md-2 {
+      -ms-flex: 0 0 16.666667%;
+      flex: 0 0 16.666667%;
+      max-width: 16.666667%; }
+    #ChartWellBlog .col-md-3 {
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%; }
+    #ChartWellBlog .col-md-4 {
+      -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%; }
+    #ChartWellBlog .col-md-5 {
+      -ms-flex: 0 0 41.666667%;
+      flex: 0 0 41.666667%;
+      max-width: 41.666667%; }
+    #ChartWellBlog .col-md-6 {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%; }
+    #ChartWellBlog .col-md-7 {
+      -ms-flex: 0 0 58.333333%;
+      flex: 0 0 58.333333%;
+      max-width: 58.333333%; }
+    #ChartWellBlog .col-md-8 {
+      -ms-flex: 0 0 66.666667%;
+      flex: 0 0 66.666667%;
+      max-width: 66.666667%; }
+    #ChartWellBlog .col-md-9 {
+      -ms-flex: 0 0 75%;
+      flex: 0 0 75%;
+      max-width: 75%; }
+    #ChartWellBlog .col-md-10 {
+      -ms-flex: 0 0 83.333333%;
+      flex: 0 0 83.333333%;
+      max-width: 83.333333%; }
+    #ChartWellBlog .col-md-11 {
+      -ms-flex: 0 0 91.666667%;
+      flex: 0 0 91.666667%;
+      max-width: 91.666667%; }
+    #ChartWellBlog .col-md-12 {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+    #ChartWellBlog .order-md-first {
+      -ms-flex-order: -1;
+      order: -1; }
+    #ChartWellBlog .order-md-last {
+      -ms-flex-order: 13;
+      order: 13; }
+    #ChartWellBlog .order-md-0 {
+      -ms-flex-order: 0;
+      order: 0; }
+    #ChartWellBlog .order-md-1 {
+      -ms-flex-order: 1;
+      order: 1; }
+    #ChartWellBlog .order-md-2 {
+      -ms-flex-order: 2;
+      order: 2; }
+    #ChartWellBlog .order-md-3 {
+      -ms-flex-order: 3;
+      order: 3; }
+    #ChartWellBlog .order-md-4 {
+      -ms-flex-order: 4;
+      order: 4; }
+    #ChartWellBlog .order-md-5 {
+      -ms-flex-order: 5;
+      order: 5; }
+    #ChartWellBlog .order-md-6 {
+      -ms-flex-order: 6;
+      order: 6; }
+    #ChartWellBlog .order-md-7 {
+      -ms-flex-order: 7;
+      order: 7; }
+    #ChartWellBlog .order-md-8 {
+      -ms-flex-order: 8;
+      order: 8; }
+    #ChartWellBlog .order-md-9 {
+      -ms-flex-order: 9;
+      order: 9; }
+    #ChartWellBlog .order-md-10 {
+      -ms-flex-order: 10;
+      order: 10; }
+    #ChartWellBlog .order-md-11 {
+      -ms-flex-order: 11;
+      order: 11; }
+    #ChartWellBlog .order-md-12 {
+      -ms-flex-order: 12;
+      order: 12; }
+    #ChartWellBlog .offset-md-0 {
+      margin-left: 0; }
+    #ChartWellBlog .offset-md-1 {
+      margin-left: 8.333333%; }
+    #ChartWellBlog .offset-md-2 {
+      margin-left: 16.666667%; }
+    #ChartWellBlog .offset-md-3 {
+      margin-left: 25%; }
+    #ChartWellBlog .offset-md-4 {
+      margin-left: 33.333333%; }
+    #ChartWellBlog .offset-md-5 {
+      margin-left: 41.666667%; }
+    #ChartWellBlog .offset-md-6 {
+      margin-left: 50%; }
+    #ChartWellBlog .offset-md-7 {
+      margin-left: 58.333333%; }
+    #ChartWellBlog .offset-md-8 {
+      margin-left: 66.666667%; }
+    #ChartWellBlog .offset-md-9 {
+      margin-left: 75%; }
+    #ChartWellBlog .offset-md-10 {
+      margin-left: 83.333333%; }
+    #ChartWellBlog .offset-md-11 {
+      margin-left: 91.666667%; } }
+  @media (min-width: 992px) {
+    #ChartWellBlog .col-lg {
+      -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      max-width: 100%; }
+    #ChartWellBlog .col-lg-auto {
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      width: auto;
+      max-width: 100%; }
+    #ChartWellBlog .col-lg-1 {
+      -ms-flex: 0 0 8.333333%;
+      flex: 0 0 8.333333%;
+      max-width: 8.333333%; }
+    #ChartWellBlog .col-lg-2 {
+      -ms-flex: 0 0 16.666667%;
+      flex: 0 0 16.666667%;
+      max-width: 16.666667%; }
+    #ChartWellBlog .col-lg-3 {
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%; }
+    #ChartWellBlog .col-lg-4 {
+      -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%; }
+    #ChartWellBlog .col-lg-5 {
+      -ms-flex: 0 0 41.666667%;
+      flex: 0 0 41.666667%;
+      max-width: 41.666667%; }
+    #ChartWellBlog .col-lg-6 {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%; }
+    #ChartWellBlog .col-lg-7 {
+      -ms-flex: 0 0 58.333333%;
+      flex: 0 0 58.333333%;
+      max-width: 58.333333%; }
+    #ChartWellBlog .col-lg-8 {
+      -ms-flex: 0 0 66.666667%;
+      flex: 0 0 66.666667%;
+      max-width: 66.666667%; }
+    #ChartWellBlog .col-lg-9 {
+      -ms-flex: 0 0 75%;
+      flex: 0 0 75%;
+      max-width: 75%; }
+    #ChartWellBlog .col-lg-10 {
+      -ms-flex: 0 0 83.333333%;
+      flex: 0 0 83.333333%;
+      max-width: 83.333333%; }
+    #ChartWellBlog .col-lg-11 {
+      -ms-flex: 0 0 91.666667%;
+      flex: 0 0 91.666667%;
+      max-width: 91.666667%; }
+    #ChartWellBlog .col-lg-12 {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+    #ChartWellBlog .order-lg-first {
+      -ms-flex-order: -1;
+      order: -1; }
+    #ChartWellBlog .order-lg-last {
+      -ms-flex-order: 13;
+      order: 13; }
+    #ChartWellBlog .order-lg-0 {
+      -ms-flex-order: 0;
+      order: 0; }
+    #ChartWellBlog .order-lg-1 {
+      -ms-flex-order: 1;
+      order: 1; }
+    #ChartWellBlog .order-lg-2 {
+      -ms-flex-order: 2;
+      order: 2; }
+    #ChartWellBlog .order-lg-3 {
+      -ms-flex-order: 3;
+      order: 3; }
+    #ChartWellBlog .order-lg-4 {
+      -ms-flex-order: 4;
+      order: 4; }
+    #ChartWellBlog .order-lg-5 {
+      -ms-flex-order: 5;
+      order: 5; }
+    #ChartWellBlog .order-lg-6 {
+      -ms-flex-order: 6;
+      order: 6; }
+    #ChartWellBlog .order-lg-7 {
+      -ms-flex-order: 7;
+      order: 7; }
+    #ChartWellBlog .order-lg-8 {
+      -ms-flex-order: 8;
+      order: 8; }
+    #ChartWellBlog .order-lg-9 {
+      -ms-flex-order: 9;
+      order: 9; }
+    #ChartWellBlog .order-lg-10 {
+      -ms-flex-order: 10;
+      order: 10; }
+    #ChartWellBlog .order-lg-11 {
+      -ms-flex-order: 11;
+      order: 11; }
+    #ChartWellBlog .order-lg-12 {
+      -ms-flex-order: 12;
+      order: 12; }
+    #ChartWellBlog .offset-lg-0 {
+      margin-left: 0; }
+    #ChartWellBlog .offset-lg-1 {
+      margin-left: 8.333333%; }
+    #ChartWellBlog .offset-lg-2 {
+      margin-left: 16.666667%; }
+    #ChartWellBlog .offset-lg-3 {
+      margin-left: 25%; }
+    #ChartWellBlog .offset-lg-4 {
+      margin-left: 33.333333%; }
+    #ChartWellBlog .offset-lg-5 {
+      margin-left: 41.666667%; }
+    #ChartWellBlog .offset-lg-6 {
+      margin-left: 50%; }
+    #ChartWellBlog .offset-lg-7 {
+      margin-left: 58.333333%; }
+    #ChartWellBlog .offset-lg-8 {
+      margin-left: 66.666667%; }
+    #ChartWellBlog .offset-lg-9 {
+      margin-left: 75%; }
+    #ChartWellBlog .offset-lg-10 {
+      margin-left: 83.333333%; }
+    #ChartWellBlog .offset-lg-11 {
+      margin-left: 91.666667%; } }
+  @media (min-width: 1200px) {
+    #ChartWellBlog .col-xl {
+      -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      max-width: 100%; }
+    #ChartWellBlog .col-xl-auto {
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      width: auto;
+      max-width: 100%; }
+    #ChartWellBlog .col-xl-1 {
+      -ms-flex: 0 0 8.333333%;
+      flex: 0 0 8.333333%;
+      max-width: 8.333333%; }
+    #ChartWellBlog .col-xl-2 {
+      -ms-flex: 0 0 16.666667%;
+      flex: 0 0 16.666667%;
+      max-width: 16.666667%; }
+    #ChartWellBlog .col-xl-3 {
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%; }
+    #ChartWellBlog .col-xl-4 {
+      -ms-flex: 0 0 33.333333%;
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%; }
+    #ChartWellBlog .col-xl-5 {
+      -ms-flex: 0 0 41.666667%;
+      flex: 0 0 41.666667%;
+      max-width: 41.666667%; }
+    #ChartWellBlog .col-xl-6 {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%; }
+    #ChartWellBlog .col-xl-7 {
+      -ms-flex: 0 0 58.333333%;
+      flex: 0 0 58.333333%;
+      max-width: 58.333333%; }
+    #ChartWellBlog .col-xl-8 {
+      -ms-flex: 0 0 66.666667%;
+      flex: 0 0 66.666667%;
+      max-width: 66.666667%; }
+    #ChartWellBlog .col-xl-9 {
+      -ms-flex: 0 0 75%;
+      flex: 0 0 75%;
+      max-width: 75%; }
+    #ChartWellBlog .col-xl-10 {
+      -ms-flex: 0 0 83.333333%;
+      flex: 0 0 83.333333%;
+      max-width: 83.333333%; }
+    #ChartWellBlog .col-xl-11 {
+      -ms-flex: 0 0 91.666667%;
+      flex: 0 0 91.666667%;
+      max-width: 91.666667%; }
+    #ChartWellBlog .col-xl-12 {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%; }
+    #ChartWellBlog .order-xl-first {
+      -ms-flex-order: -1;
+      order: -1; }
+    #ChartWellBlog .order-xl-last {
+      -ms-flex-order: 13;
+      order: 13; }
+    #ChartWellBlog .order-xl-0 {
+      -ms-flex-order: 0;
+      order: 0; }
+    #ChartWellBlog .order-xl-1 {
+      -ms-flex-order: 1;
+      order: 1; }
+    #ChartWellBlog .order-xl-2 {
+      -ms-flex-order: 2;
+      order: 2; }
+    #ChartWellBlog .order-xl-3 {
+      -ms-flex-order: 3;
+      order: 3; }
+    #ChartWellBlog .order-xl-4 {
+      -ms-flex-order: 4;
+      order: 4; }
+    #ChartWellBlog .order-xl-5 {
+      -ms-flex-order: 5;
+      order: 5; }
+    #ChartWellBlog .order-xl-6 {
+      -ms-flex-order: 6;
+      order: 6; }
+    #ChartWellBlog .order-xl-7 {
+      -ms-flex-order: 7;
+      order: 7; }
+    #ChartWellBlog .order-xl-8 {
+      -ms-flex-order: 8;
+      order: 8; }
+    #ChartWellBlog .order-xl-9 {
+      -ms-flex-order: 9;
+      order: 9; }
+    #ChartWellBlog .order-xl-10 {
+      -ms-flex-order: 10;
+      order: 10; }
+    #ChartWellBlog .order-xl-11 {
+      -ms-flex-order: 11;
+      order: 11; }
+    #ChartWellBlog .order-xl-12 {
+      -ms-flex-order: 12;
+      order: 12; }
+    #ChartWellBlog .offset-xl-0 {
+      margin-left: 0; }
+    #ChartWellBlog .offset-xl-1 {
+      margin-left: 8.333333%; }
+    #ChartWellBlog .offset-xl-2 {
+      margin-left: 16.666667%; }
+    #ChartWellBlog .offset-xl-3 {
+      margin-left: 25%; }
+    #ChartWellBlog .offset-xl-4 {
+      margin-left: 33.333333%; }
+    #ChartWellBlog .offset-xl-5 {
+      margin-left: 41.666667%; }
+    #ChartWellBlog .offset-xl-6 {
+      margin-left: 50%; }
+    #ChartWellBlog .offset-xl-7 {
+      margin-left: 58.333333%; }
+    #ChartWellBlog .offset-xl-8 {
+      margin-left: 66.666667%; }
+    #ChartWellBlog .offset-xl-9 {
+      margin-left: 75%; }
+    #ChartWellBlog .offset-xl-10 {
+      margin-left: 83.333333%; }
+    #ChartWellBlog .offset-xl-11 {
+      margin-left: 91.666667%; } }
+  #ChartWellBlog .d-none {
+    display: none !important; }
+  #ChartWellBlog .d-inline {
+    display: inline !important; }
+  #ChartWellBlog .d-inline-block {
+    display: inline-block !important; }
+  #ChartWellBlog .d-block {
+    display: block !important; }
+  #ChartWellBlog .d-table {
+    display: table !important; }
+  #ChartWellBlog .d-table-row {
+    display: table-row !important; }
+  #ChartWellBlog .d-table-cell {
+    display: table-cell !important; }
+  #ChartWellBlog .d-flex {
+    display: -ms-flexbox !important;
+    display: flex !important; }
+  #ChartWellBlog .d-inline-flex {
+    display: -ms-inline-flexbox !important;
+    display: inline-flex !important; }
+  @media (min-width: 576px) {
+    #ChartWellBlog .d-sm-none {
+      display: none !important; }
+    #ChartWellBlog .d-sm-inline {
+      display: inline !important; }
+    #ChartWellBlog .d-sm-inline-block {
+      display: inline-block !important; }
+    #ChartWellBlog .d-sm-block {
+      display: block !important; }
+    #ChartWellBlog .d-sm-table {
+      display: table !important; }
+    #ChartWellBlog .d-sm-table-row {
+      display: table-row !important; }
+    #ChartWellBlog .d-sm-table-cell {
+      display: table-cell !important; }
+    #ChartWellBlog .d-sm-flex {
+      display: -ms-flexbox !important;
+      display: flex !important; }
+    #ChartWellBlog .d-sm-inline-flex {
+      display: -ms-inline-flexbox !important;
+      display: inline-flex !important; } }
+  @media (min-width: 768px) {
+    #ChartWellBlog .d-md-none {
+      display: none !important; }
+    #ChartWellBlog .d-md-inline {
+      display: inline !important; }
+    #ChartWellBlog .d-md-inline-block {
+      display: inline-block !important; }
+    #ChartWellBlog .d-md-block {
+      display: block !important; }
+    #ChartWellBlog .d-md-table {
+      display: table !important; }
+    #ChartWellBlog .d-md-table-row {
+      display: table-row !important; }
+    #ChartWellBlog .d-md-table-cell {
+      display: table-cell !important; }
+    #ChartWellBlog .d-md-flex {
+      display: -ms-flexbox !important;
+      display: flex !important; }
+    #ChartWellBlog .d-md-inline-flex {
+      display: -ms-inline-flexbox !important;
+      display: inline-flex !important; } }
+  @media (min-width: 992px) {
+    #ChartWellBlog .d-lg-none {
+      display: none !important; }
+    #ChartWellBlog .d-lg-inline {
+      display: inline !important; }
+    #ChartWellBlog .d-lg-inline-block {
+      display: inline-block !important; }
+    #ChartWellBlog .d-lg-block {
+      display: block !important; }
+    #ChartWellBlog .d-lg-table {
+      display: table !important; }
+    #ChartWellBlog .d-lg-table-row {
+      display: table-row !important; }
+    #ChartWellBlog .d-lg-table-cell {
+      display: table-cell !important; }
+    #ChartWellBlog .d-lg-flex {
+      display: -ms-flexbox !important;
+      display: flex !important; }
+    #ChartWellBlog .d-lg-inline-flex {
+      display: -ms-inline-flexbox !important;
+      display: inline-flex !important; } }
+  @media (min-width: 1200px) {
+    #ChartWellBlog .d-xl-none {
+      display: none !important; }
+    #ChartWellBlog .d-xl-inline {
+      display: inline !important; }
+    #ChartWellBlog .d-xl-inline-block {
+      display: inline-block !important; }
+    #ChartWellBlog .d-xl-block {
+      display: block !important; }
+    #ChartWellBlog .d-xl-table {
+      display: table !important; }
+    #ChartWellBlog .d-xl-table-row {
+      display: table-row !important; }
+    #ChartWellBlog .d-xl-table-cell {
+      display: table-cell !important; }
+    #ChartWellBlog .d-xl-flex {
+      display: -ms-flexbox !important;
+      display: flex !important; }
+    #ChartWellBlog .d-xl-inline-flex {
+      display: -ms-inline-flexbox !important;
+      display: inline-flex !important; } }
+  @media print {
+    #ChartWellBlog .d-print-none {
+      display: none !important; }
+    #ChartWellBlog .d-print-inline {
+      display: inline !important; }
+    #ChartWellBlog .d-print-inline-block {
+      display: inline-block !important; }
+    #ChartWellBlog .d-print-block {
+      display: block !important; }
+    #ChartWellBlog .d-print-table {
+      display: table !important; }
+    #ChartWellBlog .d-print-table-row {
+      display: table-row !important; }
+    #ChartWellBlog .d-print-table-cell {
+      display: table-cell !important; }
+    #ChartWellBlog .d-print-flex {
+      display: -ms-flexbox !important;
+      display: flex !important; }
+    #ChartWellBlog .d-print-inline-flex {
+      display: -ms-inline-flexbox !important;
+      display: inline-flex !important; } }
+  #ChartWellBlog .flex-row {
+    -ms-flex-direction: row !important;
+    flex-direction: row !important; }
+  #ChartWellBlog .flex-column {
+    -ms-flex-direction: column !important;
+    flex-direction: column !important; }
+  #ChartWellBlog .flex-row-reverse {
+    -ms-flex-direction: row-reverse !important;
+    flex-direction: row-reverse !important; }
+  #ChartWellBlog .flex-column-reverse {
+    -ms-flex-direction: column-reverse !important;
+    flex-direction: column-reverse !important; }
+  #ChartWellBlog .flex-wrap {
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important; }
+  #ChartWellBlog .flex-nowrap {
+    -ms-flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important; }
+  #ChartWellBlog .flex-wrap-reverse {
+    -ms-flex-wrap: wrap-reverse !important;
+    flex-wrap: wrap-reverse !important; }
+  #ChartWellBlog .flex-fill {
+    -ms-flex: 1 1 auto !important;
+    flex: 1 1 auto !important; }
+  #ChartWellBlog .flex-grow-0 {
+    -ms-flex-positive: 0 !important;
+    flex-grow: 0 !important; }
+  #ChartWellBlog .flex-grow-1 {
+    -ms-flex-positive: 1 !important;
+    flex-grow: 1 !important; }
+  #ChartWellBlog .flex-shrink-0 {
+    -ms-flex-negative: 0 !important;
+    flex-shrink: 0 !important; }
+  #ChartWellBlog .flex-shrink-1 {
+    -ms-flex-negative: 1 !important;
+    flex-shrink: 1 !important; }
+  #ChartWellBlog .justify-content-start {
+    -ms-flex-pack: start !important;
+    justify-content: flex-start !important; }
+  #ChartWellBlog .justify-content-end {
+    -ms-flex-pack: end !important;
+    justify-content: flex-end !important; }
+  #ChartWellBlog .justify-content-center {
+    -ms-flex-pack: center !important;
+    justify-content: center !important; }
+  #ChartWellBlog .justify-content-between {
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important; }
+  #ChartWellBlog .justify-content-around {
+    -ms-flex-pack: distribute !important;
+    justify-content: space-around !important; }
+  #ChartWellBlog .align-items-start {
+    -ms-flex-align: start !important;
+    align-items: flex-start !important; }
+  #ChartWellBlog .align-items-end {
+    -ms-flex-align: end !important;
+    align-items: flex-end !important; }
+  #ChartWellBlog .align-items-center {
+    -ms-flex-align: center !important;
+    align-items: center !important; }
+  #ChartWellBlog .align-items-baseline {
+    -ms-flex-align: baseline !important;
+    align-items: baseline !important; }
+  #ChartWellBlog .align-items-stretch {
+    -ms-flex-align: stretch !important;
+    align-items: stretch !important; }
+  #ChartWellBlog .align-content-start {
+    -ms-flex-line-pack: start !important;
+    align-content: flex-start !important; }
+  #ChartWellBlog .align-content-end {
+    -ms-flex-line-pack: end !important;
+    align-content: flex-end !important; }
+  #ChartWellBlog .align-content-center {
+    -ms-flex-line-pack: center !important;
+    align-content: center !important; }
+  #ChartWellBlog .align-content-between {
+    -ms-flex-line-pack: justify !important;
+    align-content: space-between !important; }
+  #ChartWellBlog .align-content-around {
+    -ms-flex-line-pack: distribute !important;
+    align-content: space-around !important; }
+  #ChartWellBlog .align-content-stretch {
+    -ms-flex-line-pack: stretch !important;
+    align-content: stretch !important; }
+  #ChartWellBlog .align-self-auto {
+    -ms-flex-item-align: auto !important;
+    align-self: auto !important; }
+  #ChartWellBlog .align-self-start {
+    -ms-flex-item-align: start !important;
+    align-self: flex-start !important; }
+  #ChartWellBlog .align-self-end {
+    -ms-flex-item-align: end !important;
+    align-self: flex-end !important; }
+  #ChartWellBlog .align-self-center {
+    -ms-flex-item-align: center !important;
+    align-self: center !important; }
+  #ChartWellBlog .align-self-baseline {
+    -ms-flex-item-align: baseline !important;
+    align-self: baseline !important; }
+  #ChartWellBlog .align-self-stretch {
+    -ms-flex-item-align: stretch !important;
+    align-self: stretch !important; }
+  @media (min-width: 576px) {
+    #ChartWellBlog .flex-sm-row {
+      -ms-flex-direction: row !important;
+      flex-direction: row !important; }
+    #ChartWellBlog .flex-sm-column {
+      -ms-flex-direction: column !important;
+      flex-direction: column !important; }
+    #ChartWellBlog .flex-sm-row-reverse {
+      -ms-flex-direction: row-reverse !important;
+      flex-direction: row-reverse !important; }
+    #ChartWellBlog .flex-sm-column-reverse {
+      -ms-flex-direction: column-reverse !important;
+      flex-direction: column-reverse !important; }
+    #ChartWellBlog .flex-sm-wrap {
+      -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important; }
+    #ChartWellBlog .flex-sm-nowrap {
+      -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important; }
+    #ChartWellBlog .flex-sm-wrap-reverse {
+      -ms-flex-wrap: wrap-reverse !important;
+      flex-wrap: wrap-reverse !important; }
+    #ChartWellBlog .flex-sm-fill {
+      -ms-flex: 1 1 auto !important;
+      flex: 1 1 auto !important; }
+    #ChartWellBlog .flex-sm-grow-0 {
+      -ms-flex-positive: 0 !important;
+      flex-grow: 0 !important; }
+    #ChartWellBlog .flex-sm-grow-1 {
+      -ms-flex-positive: 1 !important;
+      flex-grow: 1 !important; }
+    #ChartWellBlog .flex-sm-shrink-0 {
+      -ms-flex-negative: 0 !important;
+      flex-shrink: 0 !important; }
+    #ChartWellBlog .flex-sm-shrink-1 {
+      -ms-flex-negative: 1 !important;
+      flex-shrink: 1 !important; }
+    #ChartWellBlog .justify-content-sm-start {
+      -ms-flex-pack: start !important;
+      justify-content: flex-start !important; }
+    #ChartWellBlog .justify-content-sm-end {
+      -ms-flex-pack: end !important;
+      justify-content: flex-end !important; }
+    #ChartWellBlog .justify-content-sm-center {
+      -ms-flex-pack: center !important;
+      justify-content: center !important; }
+    #ChartWellBlog .justify-content-sm-between {
+      -ms-flex-pack: justify !important;
+      justify-content: space-between !important; }
+    #ChartWellBlog .justify-content-sm-around {
+      -ms-flex-pack: distribute !important;
+      justify-content: space-around !important; }
+    #ChartWellBlog .align-items-sm-start {
+      -ms-flex-align: start !important;
+      align-items: flex-start !important; }
+    #ChartWellBlog .align-items-sm-end {
+      -ms-flex-align: end !important;
+      align-items: flex-end !important; }
+    #ChartWellBlog .align-items-sm-center {
+      -ms-flex-align: center !important;
+      align-items: center !important; }
+    #ChartWellBlog .align-items-sm-baseline {
+      -ms-flex-align: baseline !important;
+      align-items: baseline !important; }
+    #ChartWellBlog .align-items-sm-stretch {
+      -ms-flex-align: stretch !important;
+      align-items: stretch !important; }
+    #ChartWellBlog .align-content-sm-start {
+      -ms-flex-line-pack: start !important;
+      align-content: flex-start !important; }
+    #ChartWellBlog .align-content-sm-end {
+      -ms-flex-line-pack: end !important;
+      align-content: flex-end !important; }
+    #ChartWellBlog .align-content-sm-center {
+      -ms-flex-line-pack: center !important;
+      align-content: center !important; }
+    #ChartWellBlog .align-content-sm-between {
+      -ms-flex-line-pack: justify !important;
+      align-content: space-between !important; }
+    #ChartWellBlog .align-content-sm-around {
+      -ms-flex-line-pack: distribute !important;
+      align-content: space-around !important; }
+    #ChartWellBlog .align-content-sm-stretch {
+      -ms-flex-line-pack: stretch !important;
+      align-content: stretch !important; }
+    #ChartWellBlog .align-self-sm-auto {
+      -ms-flex-item-align: auto !important;
+      align-self: auto !important; }
+    #ChartWellBlog .align-self-sm-start {
+      -ms-flex-item-align: start !important;
+      align-self: flex-start !important; }
+    #ChartWellBlog .align-self-sm-end {
+      -ms-flex-item-align: end !important;
+      align-self: flex-end !important; }
+    #ChartWellBlog .align-self-sm-center {
+      -ms-flex-item-align: center !important;
+      align-self: center !important; }
+    #ChartWellBlog .align-self-sm-baseline {
+      -ms-flex-item-align: baseline !important;
+      align-self: baseline !important; }
+    #ChartWellBlog .align-self-sm-stretch {
+      -ms-flex-item-align: stretch !important;
+      align-self: stretch !important; } }
+  @media (min-width: 768px) {
+    #ChartWellBlog .flex-md-row {
+      -ms-flex-direction: row !important;
+      flex-direction: row !important; }
+    #ChartWellBlog .flex-md-column {
+      -ms-flex-direction: column !important;
+      flex-direction: column !important; }
+    #ChartWellBlog .flex-md-row-reverse {
+      -ms-flex-direction: row-reverse !important;
+      flex-direction: row-reverse !important; }
+    #ChartWellBlog .flex-md-column-reverse {
+      -ms-flex-direction: column-reverse !important;
+      flex-direction: column-reverse !important; }
+    #ChartWellBlog .flex-md-wrap {
+      -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important; }
+    #ChartWellBlog .flex-md-nowrap {
+      -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important; }
+    #ChartWellBlog .flex-md-wrap-reverse {
+      -ms-flex-wrap: wrap-reverse !important;
+      flex-wrap: wrap-reverse !important; }
+    #ChartWellBlog .flex-md-fill {
+      -ms-flex: 1 1 auto !important;
+      flex: 1 1 auto !important; }
+    #ChartWellBlog .flex-md-grow-0 {
+      -ms-flex-positive: 0 !important;
+      flex-grow: 0 !important; }
+    #ChartWellBlog .flex-md-grow-1 {
+      -ms-flex-positive: 1 !important;
+      flex-grow: 1 !important; }
+    #ChartWellBlog .flex-md-shrink-0 {
+      -ms-flex-negative: 0 !important;
+      flex-shrink: 0 !important; }
+    #ChartWellBlog .flex-md-shrink-1 {
+      -ms-flex-negative: 1 !important;
+      flex-shrink: 1 !important; }
+    #ChartWellBlog .justify-content-md-start {
+      -ms-flex-pack: start !important;
+      justify-content: flex-start !important; }
+    #ChartWellBlog .justify-content-md-end {
+      -ms-flex-pack: end !important;
+      justify-content: flex-end !important; }
+    #ChartWellBlog .justify-content-md-center {
+      -ms-flex-pack: center !important;
+      justify-content: center !important; }
+    #ChartWellBlog .justify-content-md-between {
+      -ms-flex-pack: justify !important;
+      justify-content: space-between !important; }
+    #ChartWellBlog .justify-content-md-around {
+      -ms-flex-pack: distribute !important;
+      justify-content: space-around !important; }
+    #ChartWellBlog .align-items-md-start {
+      -ms-flex-align: start !important;
+      align-items: flex-start !important; }
+    #ChartWellBlog .align-items-md-end {
+      -ms-flex-align: end !important;
+      align-items: flex-end !important; }
+    #ChartWellBlog .align-items-md-center {
+      -ms-flex-align: center !important;
+      align-items: center !important; }
+    #ChartWellBlog .align-items-md-baseline {
+      -ms-flex-align: baseline !important;
+      align-items: baseline !important; }
+    #ChartWellBlog .align-items-md-stretch {
+      -ms-flex-align: stretch !important;
+      align-items: stretch !important; }
+    #ChartWellBlog .align-content-md-start {
+      -ms-flex-line-pack: start !important;
+      align-content: flex-start !important; }
+    #ChartWellBlog .align-content-md-end {
+      -ms-flex-line-pack: end !important;
+      align-content: flex-end !important; }
+    #ChartWellBlog .align-content-md-center {
+      -ms-flex-line-pack: center !important;
+      align-content: center !important; }
+    #ChartWellBlog .align-content-md-between {
+      -ms-flex-line-pack: justify !important;
+      align-content: space-between !important; }
+    #ChartWellBlog .align-content-md-around {
+      -ms-flex-line-pack: distribute !important;
+      align-content: space-around !important; }
+    #ChartWellBlog .align-content-md-stretch {
+      -ms-flex-line-pack: stretch !important;
+      align-content: stretch !important; }
+    #ChartWellBlog .align-self-md-auto {
+      -ms-flex-item-align: auto !important;
+      align-self: auto !important; }
+    #ChartWellBlog .align-self-md-start {
+      -ms-flex-item-align: start !important;
+      align-self: flex-start !important; }
+    #ChartWellBlog .align-self-md-end {
+      -ms-flex-item-align: end !important;
+      align-self: flex-end !important; }
+    #ChartWellBlog .align-self-md-center {
+      -ms-flex-item-align: center !important;
+      align-self: center !important; }
+    #ChartWellBlog .align-self-md-baseline {
+      -ms-flex-item-align: baseline !important;
+      align-self: baseline !important; }
+    #ChartWellBlog .align-self-md-stretch {
+      -ms-flex-item-align: stretch !important;
+      align-self: stretch !important; } }
+  @media (min-width: 992px) {
+    #ChartWellBlog .flex-lg-row {
+      -ms-flex-direction: row !important;
+      flex-direction: row !important; }
+    #ChartWellBlog .flex-lg-column {
+      -ms-flex-direction: column !important;
+      flex-direction: column !important; }
+    #ChartWellBlog .flex-lg-row-reverse {
+      -ms-flex-direction: row-reverse !important;
+      flex-direction: row-reverse !important; }
+    #ChartWellBlog .flex-lg-column-reverse {
+      -ms-flex-direction: column-reverse !important;
+      flex-direction: column-reverse !important; }
+    #ChartWellBlog .flex-lg-wrap {
+      -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important; }
+    #ChartWellBlog .flex-lg-nowrap {
+      -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important; }
+    #ChartWellBlog .flex-lg-wrap-reverse {
+      -ms-flex-wrap: wrap-reverse !important;
+      flex-wrap: wrap-reverse !important; }
+    #ChartWellBlog .flex-lg-fill {
+      -ms-flex: 1 1 auto !important;
+      flex: 1 1 auto !important; }
+    #ChartWellBlog .flex-lg-grow-0 {
+      -ms-flex-positive: 0 !important;
+      flex-grow: 0 !important; }
+    #ChartWellBlog .flex-lg-grow-1 {
+      -ms-flex-positive: 1 !important;
+      flex-grow: 1 !important; }
+    #ChartWellBlog .flex-lg-shrink-0 {
+      -ms-flex-negative: 0 !important;
+      flex-shrink: 0 !important; }
+    #ChartWellBlog .flex-lg-shrink-1 {
+      -ms-flex-negative: 1 !important;
+      flex-shrink: 1 !important; }
+    #ChartWellBlog .justify-content-lg-start {
+      -ms-flex-pack: start !important;
+      justify-content: flex-start !important; }
+    #ChartWellBlog .justify-content-lg-end {
+      -ms-flex-pack: end !important;
+      justify-content: flex-end !important; }
+    #ChartWellBlog .justify-content-lg-center {
+      -ms-flex-pack: center !important;
+      justify-content: center !important; }
+    #ChartWellBlog .justify-content-lg-between {
+      -ms-flex-pack: justify !important;
+      justify-content: space-between !important; }
+    #ChartWellBlog .justify-content-lg-around {
+      -ms-flex-pack: distribute !important;
+      justify-content: space-around !important; }
+    #ChartWellBlog .align-items-lg-start {
+      -ms-flex-align: start !important;
+      align-items: flex-start !important; }
+    #ChartWellBlog .align-items-lg-end {
+      -ms-flex-align: end !important;
+      align-items: flex-end !important; }
+    #ChartWellBlog .align-items-lg-center {
+      -ms-flex-align: center !important;
+      align-items: center !important; }
+    #ChartWellBlog .align-items-lg-baseline {
+      -ms-flex-align: baseline !important;
+      align-items: baseline !important; }
+    #ChartWellBlog .align-items-lg-stretch {
+      -ms-flex-align: stretch !important;
+      align-items: stretch !important; }
+    #ChartWellBlog .align-content-lg-start {
+      -ms-flex-line-pack: start !important;
+      align-content: flex-start !important; }
+    #ChartWellBlog .align-content-lg-end {
+      -ms-flex-line-pack: end !important;
+      align-content: flex-end !important; }
+    #ChartWellBlog .align-content-lg-center {
+      -ms-flex-line-pack: center !important;
+      align-content: center !important; }
+    #ChartWellBlog .align-content-lg-between {
+      -ms-flex-line-pack: justify !important;
+      align-content: space-between !important; }
+    #ChartWellBlog .align-content-lg-around {
+      -ms-flex-line-pack: distribute !important;
+      align-content: space-around !important; }
+    #ChartWellBlog .align-content-lg-stretch {
+      -ms-flex-line-pack: stretch !important;
+      align-content: stretch !important; }
+    #ChartWellBlog .align-self-lg-auto {
+      -ms-flex-item-align: auto !important;
+      align-self: auto !important; }
+    #ChartWellBlog .align-self-lg-start {
+      -ms-flex-item-align: start !important;
+      align-self: flex-start !important; }
+    #ChartWellBlog .align-self-lg-end {
+      -ms-flex-item-align: end !important;
+      align-self: flex-end !important; }
+    #ChartWellBlog .align-self-lg-center {
+      -ms-flex-item-align: center !important;
+      align-self: center !important; }
+    #ChartWellBlog .align-self-lg-baseline {
+      -ms-flex-item-align: baseline !important;
+      align-self: baseline !important; }
+    #ChartWellBlog .align-self-lg-stretch {
+      -ms-flex-item-align: stretch !important;
+      align-self: stretch !important; } }
+  @media (min-width: 1200px) {
+    #ChartWellBlog .flex-xl-row {
+      -ms-flex-direction: row !important;
+      flex-direction: row !important; }
+    #ChartWellBlog .flex-xl-column {
+      -ms-flex-direction: column !important;
+      flex-direction: column !important; }
+    #ChartWellBlog .flex-xl-row-reverse {
+      -ms-flex-direction: row-reverse !important;
+      flex-direction: row-reverse !important; }
+    #ChartWellBlog .flex-xl-column-reverse {
+      -ms-flex-direction: column-reverse !important;
+      flex-direction: column-reverse !important; }
+    #ChartWellBlog .flex-xl-wrap {
+      -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important; }
+    #ChartWellBlog .flex-xl-nowrap {
+      -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important; }
+    #ChartWellBlog .flex-xl-wrap-reverse {
+      -ms-flex-wrap: wrap-reverse !important;
+      flex-wrap: wrap-reverse !important; }
+    #ChartWellBlog .flex-xl-fill {
+      -ms-flex: 1 1 auto !important;
+      flex: 1 1 auto !important; }
+    #ChartWellBlog .flex-xl-grow-0 {
+      -ms-flex-positive: 0 !important;
+      flex-grow: 0 !important; }
+    #ChartWellBlog .flex-xl-grow-1 {
+      -ms-flex-positive: 1 !important;
+      flex-grow: 1 !important; }
+    #ChartWellBlog .flex-xl-shrink-0 {
+      -ms-flex-negative: 0 !important;
+      flex-shrink: 0 !important; }
+    #ChartWellBlog .flex-xl-shrink-1 {
+      -ms-flex-negative: 1 !important;
+      flex-shrink: 1 !important; }
+    #ChartWellBlog .justify-content-xl-start {
+      -ms-flex-pack: start !important;
+      justify-content: flex-start !important; }
+    #ChartWellBlog .justify-content-xl-end {
+      -ms-flex-pack: end !important;
+      justify-content: flex-end !important; }
+    #ChartWellBlog .justify-content-xl-center {
+      -ms-flex-pack: center !important;
+      justify-content: center !important; }
+    #ChartWellBlog .justify-content-xl-between {
+      -ms-flex-pack: justify !important;
+      justify-content: space-between !important; }
+    #ChartWellBlog .justify-content-xl-around {
+      -ms-flex-pack: distribute !important;
+      justify-content: space-around !important; }
+    #ChartWellBlog .align-items-xl-start {
+      -ms-flex-align: start !important;
+      align-items: flex-start !important; }
+    #ChartWellBlog .align-items-xl-end {
+      -ms-flex-align: end !important;
+      align-items: flex-end !important; }
+    #ChartWellBlog .align-items-xl-center {
+      -ms-flex-align: center !important;
+      align-items: center !important; }
+    #ChartWellBlog .align-items-xl-baseline {
+      -ms-flex-align: baseline !important;
+      align-items: baseline !important; }
+    #ChartWellBlog .align-items-xl-stretch {
+      -ms-flex-align: stretch !important;
+      align-items: stretch !important; }
+    #ChartWellBlog .align-content-xl-start {
+      -ms-flex-line-pack: start !important;
+      align-content: flex-start !important; }
+    #ChartWellBlog .align-content-xl-end {
+      -ms-flex-line-pack: end !important;
+      align-content: flex-end !important; }
+    #ChartWellBlog .align-content-xl-center {
+      -ms-flex-line-pack: center !important;
+      align-content: center !important; }
+    #ChartWellBlog .align-content-xl-between {
+      -ms-flex-line-pack: justify !important;
+      align-content: space-between !important; }
+    #ChartWellBlog .align-content-xl-around {
+      -ms-flex-line-pack: distribute !important;
+      align-content: space-around !important; }
+    #ChartWellBlog .align-content-xl-stretch {
+      -ms-flex-line-pack: stretch !important;
+      align-content: stretch !important; }
+    #ChartWellBlog .align-self-xl-auto {
+      -ms-flex-item-align: auto !important;
+      align-self: auto !important; }
+    #ChartWellBlog .align-self-xl-start {
+      -ms-flex-item-align: start !important;
+      align-self: flex-start !important; }
+    #ChartWellBlog .align-self-xl-end {
+      -ms-flex-item-align: end !important;
+      align-self: flex-end !important; }
+    #ChartWellBlog .align-self-xl-center {
+      -ms-flex-item-align: center !important;
+      align-self: center !important; }
+    #ChartWellBlog .align-self-xl-baseline {
+      -ms-flex-item-align: baseline !important;
+      align-self: baseline !important; }
+    #ChartWellBlog .align-self-xl-stretch {
+      -ms-flex-item-align: stretch !important;
+      align-self: stretch !important; } }
+  #ChartWellBlog .m-0 {
+    margin: 0 !important; }
+  #ChartWellBlog .mt-0,
+  #ChartWellBlog .my-0 {
+    margin-top: 0 !important; }
+  #ChartWellBlog .mr-0,
+  #ChartWellBlog .mx-0 {
+    margin-right: 0 !important; }
+  #ChartWellBlog .mb-0,
+  #ChartWellBlog .my-0 {
+    margin-bottom: 0 !important; }
+  #ChartWellBlog .ml-0,
+  #ChartWellBlog .mx-0 {
+    margin-left: 0 !important; }
+  #ChartWellBlog .m-1 {
+    margin: 0.25rem !important; }
+  #ChartWellBlog .mt-1,
+  #ChartWellBlog .my-1 {
+    margin-top: 0.25rem !important; }
+  #ChartWellBlog .mr-1,
+  #ChartWellBlog .mx-1 {
+    margin-right: 0.25rem !important; }
+  #ChartWellBlog .mb-1,
+  #ChartWellBlog .my-1 {
+    margin-bottom: 0.25rem !important; }
+  #ChartWellBlog .ml-1,
+  #ChartWellBlog .mx-1 {
+    margin-left: 0.25rem !important; }
+  #ChartWellBlog .m-2 {
+    margin: 0.5rem !important; }
+  #ChartWellBlog .mt-2,
+  #ChartWellBlog .my-2 {
+    margin-top: 0.5rem !important; }
+  #ChartWellBlog .mr-2,
+  #ChartWellBlog .mx-2 {
+    margin-right: 0.5rem !important; }
+  #ChartWellBlog .mb-2,
+  #ChartWellBlog .my-2 {
+    margin-bottom: 0.5rem !important; }
+  #ChartWellBlog .ml-2,
+  #ChartWellBlog .mx-2 {
+    margin-left: 0.5rem !important; }
+  #ChartWellBlog .m-3 {
+    margin: 1rem !important; }
+  #ChartWellBlog .mt-3,
+  #ChartWellBlog .my-3 {
+    margin-top: 1rem !important; }
+  #ChartWellBlog .mr-3,
+  #ChartWellBlog .mx-3 {
+    margin-right: 1rem !important; }
+  #ChartWellBlog .mb-3,
+  #ChartWellBlog .my-3 {
+    margin-bottom: 1rem !important; }
+  #ChartWellBlog .ml-3,
+  #ChartWellBlog .mx-3 {
+    margin-left: 1rem !important; }
+  #ChartWellBlog .m-4 {
+    margin: 1.5rem !important; }
+  #ChartWellBlog .mt-4,
+  #ChartWellBlog .my-4 {
+    margin-top: 1.5rem !important; }
+  #ChartWellBlog .mr-4,
+  #ChartWellBlog .mx-4 {
+    margin-right: 1.5rem !important; }
+  #ChartWellBlog .mb-4,
+  #ChartWellBlog .my-4 {
+    margin-bottom: 1.5rem !important; }
+  #ChartWellBlog .ml-4,
+  #ChartWellBlog .mx-4 {
+    margin-left: 1.5rem !important; }
+  #ChartWellBlog .m-5 {
+    margin: 3rem !important; }
+  #ChartWellBlog .mt-5,
+  #ChartWellBlog .my-5 {
+    margin-top: 3rem !important; }
+  #ChartWellBlog .mr-5,
+  #ChartWellBlog .mx-5 {
+    margin-right: 3rem !important; }
+  #ChartWellBlog .mb-5,
+  #ChartWellBlog .my-5 {
+    margin-bottom: 3rem !important; }
+  #ChartWellBlog .ml-5,
+  #ChartWellBlog .mx-5 {
+    margin-left: 3rem !important; }
+  #ChartWellBlog .p-0 {
+    padding: 0 !important; }
+  #ChartWellBlog .pt-0,
+  #ChartWellBlog .py-0 {
+    padding-top: 0 !important; }
+  #ChartWellBlog .pr-0,
+  #ChartWellBlog .px-0 {
+    padding-right: 0 !important; }
+  #ChartWellBlog .pb-0,
+  #ChartWellBlog .py-0 {
+    padding-bottom: 0 !important; }
+  #ChartWellBlog .pl-0,
+  #ChartWellBlog .px-0 {
+    padding-left: 0 !important; }
+  #ChartWellBlog .p-1 {
+    padding: 0.25rem !important; }
+  #ChartWellBlog .pt-1,
+  #ChartWellBlog .py-1 {
+    padding-top: 0.25rem !important; }
+  #ChartWellBlog .pr-1,
+  #ChartWellBlog .px-1 {
+    padding-right: 0.25rem !important; }
+  #ChartWellBlog .pb-1,
+  #ChartWellBlog .py-1 {
+    padding-bottom: 0.25rem !important; }
+  #ChartWellBlog .pl-1,
+  #ChartWellBlog .px-1 {
+    padding-left: 0.25rem !important; }
+  #ChartWellBlog .p-2 {
+    padding: 0.5rem !important; }
+  #ChartWellBlog .pt-2,
+  #ChartWellBlog .py-2 {
+    padding-top: 0.5rem !important; }
+  #ChartWellBlog .pr-2,
+  #ChartWellBlog .px-2 {
+    padding-right: 0.5rem !important; }
+  #ChartWellBlog .pb-2,
+  #ChartWellBlog .py-2 {
+    padding-bottom: 0.5rem !important; }
+  #ChartWellBlog .pl-2,
+  #ChartWellBlog .px-2 {
+    padding-left: 0.5rem !important; }
+  #ChartWellBlog .p-3 {
+    padding: 1rem !important; }
+  #ChartWellBlog .pt-3,
+  #ChartWellBlog .py-3 {
+    padding-top: 1rem !important; }
+  #ChartWellBlog .pr-3,
+  #ChartWellBlog .px-3 {
+    padding-right: 1rem !important; }
+  #ChartWellBlog .pb-3,
+  #ChartWellBlog .py-3 {
+    padding-bottom: 1rem !important; }
+  #ChartWellBlog .pl-3,
+  #ChartWellBlog .px-3 {
+    padding-left: 1rem !important; }
+  #ChartWellBlog .p-4 {
+    padding: 1.5rem !important; }
+  #ChartWellBlog .pt-4,
+  #ChartWellBlog .py-4 {
+    padding-top: 1.5rem !important; }
+  #ChartWellBlog .pr-4,
+  #ChartWellBlog .px-4 {
+    padding-right: 1.5rem !important; }
+  #ChartWellBlog .pb-4,
+  #ChartWellBlog .py-4 {
+    padding-bottom: 1.5rem !important; }
+  #ChartWellBlog .pl-4,
+  #ChartWellBlog .px-4 {
+    padding-left: 1.5rem !important; }
+  #ChartWellBlog .p-5 {
+    padding: 3rem !important; }
+  #ChartWellBlog .pt-5,
+  #ChartWellBlog .py-5 {
+    padding-top: 3rem !important; }
+  #ChartWellBlog .pr-5,
+  #ChartWellBlog .px-5 {
+    padding-right: 3rem !important; }
+  #ChartWellBlog .pb-5,
+  #ChartWellBlog .py-5 {
+    padding-bottom: 3rem !important; }
+  #ChartWellBlog .pl-5,
+  #ChartWellBlog .px-5 {
+    padding-left: 3rem !important; }
+  #ChartWellBlog .m-n1 {
+    margin: -0.25rem !important; }
+  #ChartWellBlog .mt-n1,
+  #ChartWellBlog .my-n1 {
+    margin-top: -0.25rem !important; }
+  #ChartWellBlog .mr-n1,
+  #ChartWellBlog .mx-n1 {
+    margin-right: -0.25rem !important; }
+  #ChartWellBlog .mb-n1,
+  #ChartWellBlog .my-n1 {
+    margin-bottom: -0.25rem !important; }
+  #ChartWellBlog .ml-n1,
+  #ChartWellBlog .mx-n1 {
+    margin-left: -0.25rem !important; }
+  #ChartWellBlog .m-n2 {
+    margin: -0.5rem !important; }
+  #ChartWellBlog .mt-n2,
+  #ChartWellBlog .my-n2 {
+    margin-top: -0.5rem !important; }
+  #ChartWellBlog .mr-n2,
+  #ChartWellBlog .mx-n2 {
+    margin-right: -0.5rem !important; }
+  #ChartWellBlog .mb-n2,
+  #ChartWellBlog .my-n2 {
+    margin-bottom: -0.5rem !important; }
+  #ChartWellBlog .ml-n2,
+  #ChartWellBlog .mx-n2 {
+    margin-left: -0.5rem !important; }
+  #ChartWellBlog .m-n3 {
+    margin: -1rem !important; }
+  #ChartWellBlog .mt-n3,
+  #ChartWellBlog .my-n3 {
+    margin-top: -1rem !important; }
+  #ChartWellBlog .mr-n3,
+  #ChartWellBlog .mx-n3 {
+    margin-right: -1rem !important; }
+  #ChartWellBlog .mb-n3,
+  #ChartWellBlog .my-n3 {
+    margin-bottom: -1rem !important; }
+  #ChartWellBlog .ml-n3,
+  #ChartWellBlog .mx-n3 {
+    margin-left: -1rem !important; }
+  #ChartWellBlog .m-n4 {
+    margin: -1.5rem !important; }
+  #ChartWellBlog .mt-n4,
+  #ChartWellBlog .my-n4 {
+    margin-top: -1.5rem !important; }
+  #ChartWellBlog .mr-n4,
+  #ChartWellBlog .mx-n4 {
+    margin-right: -1.5rem !important; }
+  #ChartWellBlog .mb-n4,
+  #ChartWellBlog .my-n4 {
+    margin-bottom: -1.5rem !important; }
+  #ChartWellBlog .ml-n4,
+  #ChartWellBlog .mx-n4 {
+    margin-left: -1.5rem !important; }
+  #ChartWellBlog .m-n5 {
+    margin: -3rem !important; }
+  #ChartWellBlog .mt-n5,
+  #ChartWellBlog .my-n5 {
+    margin-top: -3rem !important; }
+  #ChartWellBlog .mr-n5,
+  #ChartWellBlog .mx-n5 {
+    margin-right: -3rem !important; }
+  #ChartWellBlog .mb-n5,
+  #ChartWellBlog .my-n5 {
+    margin-bottom: -3rem !important; }
+  #ChartWellBlog .ml-n5,
+  #ChartWellBlog .mx-n5 {
+    margin-left: -3rem !important; }
+  #ChartWellBlog .m-auto {
+    margin: auto !important; }
+  #ChartWellBlog .mt-auto,
+  #ChartWellBlog .my-auto {
+    margin-top: auto !important; }
+  #ChartWellBlog .mr-auto,
+  #ChartWellBlog .mx-auto {
+    margin-right: auto !important; }
+  #ChartWellBlog .mb-auto,
+  #ChartWellBlog .my-auto {
+    margin-bottom: auto !important; }
+  #ChartWellBlog .ml-auto,
+  #ChartWellBlog .mx-auto {
+    margin-left: auto !important; }
+  @media (min-width: 576px) {
+    #ChartWellBlog .m-sm-0 {
+      margin: 0 !important; }
+    #ChartWellBlog .mt-sm-0,
+    #ChartWellBlog .my-sm-0 {
+      margin-top: 0 !important; }
+    #ChartWellBlog .mr-sm-0,
+    #ChartWellBlog .mx-sm-0 {
+      margin-right: 0 !important; }
+    #ChartWellBlog .mb-sm-0,
+    #ChartWellBlog .my-sm-0 {
+      margin-bottom: 0 !important; }
+    #ChartWellBlog .ml-sm-0,
+    #ChartWellBlog .mx-sm-0 {
+      margin-left: 0 !important; }
+    #ChartWellBlog .m-sm-1 {
+      margin: 0.25rem !important; }
+    #ChartWellBlog .mt-sm-1,
+    #ChartWellBlog .my-sm-1 {
+      margin-top: 0.25rem !important; }
+    #ChartWellBlog .mr-sm-1,
+    #ChartWellBlog .mx-sm-1 {
+      margin-right: 0.25rem !important; }
+    #ChartWellBlog .mb-sm-1,
+    #ChartWellBlog .my-sm-1 {
+      margin-bottom: 0.25rem !important; }
+    #ChartWellBlog .ml-sm-1,
+    #ChartWellBlog .mx-sm-1 {
+      margin-left: 0.25rem !important; }
+    #ChartWellBlog .m-sm-2 {
+      margin: 0.5rem !important; }
+    #ChartWellBlog .mt-sm-2,
+    #ChartWellBlog .my-sm-2 {
+      margin-top: 0.5rem !important; }
+    #ChartWellBlog .mr-sm-2,
+    #ChartWellBlog .mx-sm-2 {
+      margin-right: 0.5rem !important; }
+    #ChartWellBlog .mb-sm-2,
+    #ChartWellBlog .my-sm-2 {
+      margin-bottom: 0.5rem !important; }
+    #ChartWellBlog .ml-sm-2,
+    #ChartWellBlog .mx-sm-2 {
+      margin-left: 0.5rem !important; }
+    #ChartWellBlog .m-sm-3 {
+      margin: 1rem !important; }
+    #ChartWellBlog .mt-sm-3,
+    #ChartWellBlog .my-sm-3 {
+      margin-top: 1rem !important; }
+    #ChartWellBlog .mr-sm-3,
+    #ChartWellBlog .mx-sm-3 {
+      margin-right: 1rem !important; }
+    #ChartWellBlog .mb-sm-3,
+    #ChartWellBlog .my-sm-3 {
+      margin-bottom: 1rem !important; }
+    #ChartWellBlog .ml-sm-3,
+    #ChartWellBlog .mx-sm-3 {
+      margin-left: 1rem !important; }
+    #ChartWellBlog .m-sm-4 {
+      margin: 1.5rem !important; }
+    #ChartWellBlog .mt-sm-4,
+    #ChartWellBlog .my-sm-4 {
+      margin-top: 1.5rem !important; }
+    #ChartWellBlog .mr-sm-4,
+    #ChartWellBlog .mx-sm-4 {
+      margin-right: 1.5rem !important; }
+    #ChartWellBlog .mb-sm-4,
+    #ChartWellBlog .my-sm-4 {
+      margin-bottom: 1.5rem !important; }
+    #ChartWellBlog .ml-sm-4,
+    #ChartWellBlog .mx-sm-4 {
+      margin-left: 1.5rem !important; }
+    #ChartWellBlog .m-sm-5 {
+      margin: 3rem !important; }
+    #ChartWellBlog .mt-sm-5,
+    #ChartWellBlog .my-sm-5 {
+      margin-top: 3rem !important; }
+    #ChartWellBlog .mr-sm-5,
+    #ChartWellBlog .mx-sm-5 {
+      margin-right: 3rem !important; }
+    #ChartWellBlog .mb-sm-5,
+    #ChartWellBlog .my-sm-5 {
+      margin-bottom: 3rem !important; }
+    #ChartWellBlog .ml-sm-5,
+    #ChartWellBlog .mx-sm-5 {
+      margin-left: 3rem !important; }
+    #ChartWellBlog .p-sm-0 {
+      padding: 0 !important; }
+    #ChartWellBlog .pt-sm-0,
+    #ChartWellBlog .py-sm-0 {
+      padding-top: 0 !important; }
+    #ChartWellBlog .pr-sm-0,
+    #ChartWellBlog .px-sm-0 {
+      padding-right: 0 !important; }
+    #ChartWellBlog .pb-sm-0,
+    #ChartWellBlog .py-sm-0 {
+      padding-bottom: 0 !important; }
+    #ChartWellBlog .pl-sm-0,
+    #ChartWellBlog .px-sm-0 {
+      padding-left: 0 !important; }
+    #ChartWellBlog .p-sm-1 {
+      padding: 0.25rem !important; }
+    #ChartWellBlog .pt-sm-1,
+    #ChartWellBlog .py-sm-1 {
+      padding-top: 0.25rem !important; }
+    #ChartWellBlog .pr-sm-1,
+    #ChartWellBlog .px-sm-1 {
+      padding-right: 0.25rem !important; }
+    #ChartWellBlog .pb-sm-1,
+    #ChartWellBlog .py-sm-1 {
+      padding-bottom: 0.25rem !important; }
+    #ChartWellBlog .pl-sm-1,
+    #ChartWellBlog .px-sm-1 {
+      padding-left: 0.25rem !important; }
+    #ChartWellBlog .p-sm-2 {
+      padding: 0.5rem !important; }
+    #ChartWellBlog .pt-sm-2,
+    #ChartWellBlog .py-sm-2 {
+      padding-top: 0.5rem !important; }
+    #ChartWellBlog .pr-sm-2,
+    #ChartWellBlog .px-sm-2 {
+      padding-right: 0.5rem !important; }
+    #ChartWellBlog .pb-sm-2,
+    #ChartWellBlog .py-sm-2 {
+      padding-bottom: 0.5rem !important; }
+    #ChartWellBlog .pl-sm-2,
+    #ChartWellBlog .px-sm-2 {
+      padding-left: 0.5rem !important; }
+    #ChartWellBlog .p-sm-3 {
+      padding: 1rem !important; }
+    #ChartWellBlog .pt-sm-3,
+    #ChartWellBlog .py-sm-3 {
+      padding-top: 1rem !important; }
+    #ChartWellBlog .pr-sm-3,
+    #ChartWellBlog .px-sm-3 {
+      padding-right: 1rem !important; }
+    #ChartWellBlog .pb-sm-3,
+    #ChartWellBlog .py-sm-3 {
+      padding-bottom: 1rem !important; }
+    #ChartWellBlog .pl-sm-3,
+    #ChartWellBlog .px-sm-3 {
+      padding-left: 1rem !important; }
+    #ChartWellBlog .p-sm-4 {
+      padding: 1.5rem !important; }
+    #ChartWellBlog .pt-sm-4,
+    #ChartWellBlog .py-sm-4 {
+      padding-top: 1.5rem !important; }
+    #ChartWellBlog .pr-sm-4,
+    #ChartWellBlog .px-sm-4 {
+      padding-right: 1.5rem !important; }
+    #ChartWellBlog .pb-sm-4,
+    #ChartWellBlog .py-sm-4 {
+      padding-bottom: 1.5rem !important; }
+    #ChartWellBlog .pl-sm-4,
+    #ChartWellBlog .px-sm-4 {
+      padding-left: 1.5rem !important; }
+    #ChartWellBlog .p-sm-5 {
+      padding: 3rem !important; }
+    #ChartWellBlog .pt-sm-5,
+    #ChartWellBlog .py-sm-5 {
+      padding-top: 3rem !important; }
+    #ChartWellBlog .pr-sm-5,
+    #ChartWellBlog .px-sm-5 {
+      padding-right: 3rem !important; }
+    #ChartWellBlog .pb-sm-5,
+    #ChartWellBlog .py-sm-5 {
+      padding-bottom: 3rem !important; }
+    #ChartWellBlog .pl-sm-5,
+    #ChartWellBlog .px-sm-5 {
+      padding-left: 3rem !important; }
+    #ChartWellBlog .m-sm-n1 {
+      margin: -0.25rem !important; }
+    #ChartWellBlog .mt-sm-n1,
+    #ChartWellBlog .my-sm-n1 {
+      margin-top: -0.25rem !important; }
+    #ChartWellBlog .mr-sm-n1,
+    #ChartWellBlog .mx-sm-n1 {
+      margin-right: -0.25rem !important; }
+    #ChartWellBlog .mb-sm-n1,
+    #ChartWellBlog .my-sm-n1 {
+      margin-bottom: -0.25rem !important; }
+    #ChartWellBlog .ml-sm-n1,
+    #ChartWellBlog .mx-sm-n1 {
+      margin-left: -0.25rem !important; }
+    #ChartWellBlog .m-sm-n2 {
+      margin: -0.5rem !important; }
+    #ChartWellBlog .mt-sm-n2,
+    #ChartWellBlog .my-sm-n2 {
+      margin-top: -0.5rem !important; }
+    #ChartWellBlog .mr-sm-n2,
+    #ChartWellBlog .mx-sm-n2 {
+      margin-right: -0.5rem !important; }
+    #ChartWellBlog .mb-sm-n2,
+    #ChartWellBlog .my-sm-n2 {
+      margin-bottom: -0.5rem !important; }
+    #ChartWellBlog .ml-sm-n2,
+    #ChartWellBlog .mx-sm-n2 {
+      margin-left: -0.5rem !important; }
+    #ChartWellBlog .m-sm-n3 {
+      margin: -1rem !important; }
+    #ChartWellBlog .mt-sm-n3,
+    #ChartWellBlog .my-sm-n3 {
+      margin-top: -1rem !important; }
+    #ChartWellBlog .mr-sm-n3,
+    #ChartWellBlog .mx-sm-n3 {
+      margin-right: -1rem !important; }
+    #ChartWellBlog .mb-sm-n3,
+    #ChartWellBlog .my-sm-n3 {
+      margin-bottom: -1rem !important; }
+    #ChartWellBlog .ml-sm-n3,
+    #ChartWellBlog .mx-sm-n3 {
+      margin-left: -1rem !important; }
+    #ChartWellBlog .m-sm-n4 {
+      margin: -1.5rem !important; }
+    #ChartWellBlog .mt-sm-n4,
+    #ChartWellBlog .my-sm-n4 {
+      margin-top: -1.5rem !important; }
+    #ChartWellBlog .mr-sm-n4,
+    #ChartWellBlog .mx-sm-n4 {
+      margin-right: -1.5rem !important; }
+    #ChartWellBlog .mb-sm-n4,
+    #ChartWellBlog .my-sm-n4 {
+      margin-bottom: -1.5rem !important; }
+    #ChartWellBlog .ml-sm-n4,
+    #ChartWellBlog .mx-sm-n4 {
+      margin-left: -1.5rem !important; }
+    #ChartWellBlog .m-sm-n5 {
+      margin: -3rem !important; }
+    #ChartWellBlog .mt-sm-n5,
+    #ChartWellBlog .my-sm-n5 {
+      margin-top: -3rem !important; }
+    #ChartWellBlog .mr-sm-n5,
+    #ChartWellBlog .mx-sm-n5 {
+      margin-right: -3rem !important; }
+    #ChartWellBlog .mb-sm-n5,
+    #ChartWellBlog .my-sm-n5 {
+      margin-bottom: -3rem !important; }
+    #ChartWellBlog .ml-sm-n5,
+    #ChartWellBlog .mx-sm-n5 {
+      margin-left: -3rem !important; }
+    #ChartWellBlog .m-sm-auto {
+      margin: auto !important; }
+    #ChartWellBlog .mt-sm-auto,
+    #ChartWellBlog .my-sm-auto {
+      margin-top: auto !important; }
+    #ChartWellBlog .mr-sm-auto,
+    #ChartWellBlog .mx-sm-auto {
+      margin-right: auto !important; }
+    #ChartWellBlog .mb-sm-auto,
+    #ChartWellBlog .my-sm-auto {
+      margin-bottom: auto !important; }
+    #ChartWellBlog .ml-sm-auto,
+    #ChartWellBlog .mx-sm-auto {
+      margin-left: auto !important; } }
+  @media (min-width: 768px) {
+    #ChartWellBlog .m-md-0 {
+      margin: 0 !important; }
+    #ChartWellBlog .mt-md-0,
+    #ChartWellBlog .my-md-0 {
+      margin-top: 0 !important; }
+    #ChartWellBlog .mr-md-0,
+    #ChartWellBlog .mx-md-0 {
+      margin-right: 0 !important; }
+    #ChartWellBlog .mb-md-0,
+    #ChartWellBlog .my-md-0 {
+      margin-bottom: 0 !important; }
+    #ChartWellBlog .ml-md-0,
+    #ChartWellBlog .mx-md-0 {
+      margin-left: 0 !important; }
+    #ChartWellBlog .m-md-1 {
+      margin: 0.25rem !important; }
+    #ChartWellBlog .mt-md-1,
+    #ChartWellBlog .my-md-1 {
+      margin-top: 0.25rem !important; }
+    #ChartWellBlog .mr-md-1,
+    #ChartWellBlog .mx-md-1 {
+      margin-right: 0.25rem !important; }
+    #ChartWellBlog .mb-md-1,
+    #ChartWellBlog .my-md-1 {
+      margin-bottom: 0.25rem !important; }
+    #ChartWellBlog .ml-md-1,
+    #ChartWellBlog .mx-md-1 {
+      margin-left: 0.25rem !important; }
+    #ChartWellBlog .m-md-2 {
+      margin: 0.5rem !important; }
+    #ChartWellBlog .mt-md-2,
+    #ChartWellBlog .my-md-2 {
+      margin-top: 0.5rem !important; }
+    #ChartWellBlog .mr-md-2,
+    #ChartWellBlog .mx-md-2 {
+      margin-right: 0.5rem !important; }
+    #ChartWellBlog .mb-md-2,
+    #ChartWellBlog .my-md-2 {
+      margin-bottom: 0.5rem !important; }
+    #ChartWellBlog .ml-md-2,
+    #ChartWellBlog .mx-md-2 {
+      margin-left: 0.5rem !important; }
+    #ChartWellBlog .m-md-3 {
+      margin: 1rem !important; }
+    #ChartWellBlog .mt-md-3,
+    #ChartWellBlog .my-md-3 {
+      margin-top: 1rem !important; }
+    #ChartWellBlog .mr-md-3,
+    #ChartWellBlog .mx-md-3 {
+      margin-right: 1rem !important; }
+    #ChartWellBlog .mb-md-3,
+    #ChartWellBlog .my-md-3 {
+      margin-bottom: 1rem !important; }
+    #ChartWellBlog .ml-md-3,
+    #ChartWellBlog .mx-md-3 {
+      margin-left: 1rem !important; }
+    #ChartWellBlog .m-md-4 {
+      margin: 1.5rem !important; }
+    #ChartWellBlog .mt-md-4,
+    #ChartWellBlog .my-md-4 {
+      margin-top: 1.5rem !important; }
+    #ChartWellBlog .mr-md-4,
+    #ChartWellBlog .mx-md-4 {
+      margin-right: 1.5rem !important; }
+    #ChartWellBlog .mb-md-4,
+    #ChartWellBlog .my-md-4 {
+      margin-bottom: 1.5rem !important; }
+    #ChartWellBlog .ml-md-4,
+    #ChartWellBlog .mx-md-4 {
+      margin-left: 1.5rem !important; }
+    #ChartWellBlog .m-md-5 {
+      margin: 3rem !important; }
+    #ChartWellBlog .mt-md-5,
+    #ChartWellBlog .my-md-5 {
+      margin-top: 3rem !important; }
+    #ChartWellBlog .mr-md-5,
+    #ChartWellBlog .mx-md-5 {
+      margin-right: 3rem !important; }
+    #ChartWellBlog .mb-md-5,
+    #ChartWellBlog .my-md-5 {
+      margin-bottom: 3rem !important; }
+    #ChartWellBlog .ml-md-5,
+    #ChartWellBlog .mx-md-5 {
+      margin-left: 3rem !important; }
+    #ChartWellBlog .p-md-0 {
+      padding: 0 !important; }
+    #ChartWellBlog .pt-md-0,
+    #ChartWellBlog .py-md-0 {
+      padding-top: 0 !important; }
+    #ChartWellBlog .pr-md-0,
+    #ChartWellBlog .px-md-0 {
+      padding-right: 0 !important; }
+    #ChartWellBlog .pb-md-0,
+    #ChartWellBlog .py-md-0 {
+      padding-bottom: 0 !important; }
+    #ChartWellBlog .pl-md-0,
+    #ChartWellBlog .px-md-0 {
+      padding-left: 0 !important; }
+    #ChartWellBlog .p-md-1 {
+      padding: 0.25rem !important; }
+    #ChartWellBlog .pt-md-1,
+    #ChartWellBlog .py-md-1 {
+      padding-top: 0.25rem !important; }
+    #ChartWellBlog .pr-md-1,
+    #ChartWellBlog .px-md-1 {
+      padding-right: 0.25rem !important; }
+    #ChartWellBlog .pb-md-1,
+    #ChartWellBlog .py-md-1 {
+      padding-bottom: 0.25rem !important; }
+    #ChartWellBlog .pl-md-1,
+    #ChartWellBlog .px-md-1 {
+      padding-left: 0.25rem !important; }
+    #ChartWellBlog .p-md-2 {
+      padding: 0.5rem !important; }
+    #ChartWellBlog .pt-md-2,
+    #ChartWellBlog .py-md-2 {
+      padding-top: 0.5rem !important; }
+    #ChartWellBlog .pr-md-2,
+    #ChartWellBlog .px-md-2 {
+      padding-right: 0.5rem !important; }
+    #ChartWellBlog .pb-md-2,
+    #ChartWellBlog .py-md-2 {
+      padding-bottom: 0.5rem !important; }
+    #ChartWellBlog .pl-md-2,
+    #ChartWellBlog .px-md-2 {
+      padding-left: 0.5rem !important; }
+    #ChartWellBlog .p-md-3 {
+      padding: 1rem !important; }
+    #ChartWellBlog .pt-md-3,
+    #ChartWellBlog .py-md-3 {
+      padding-top: 1rem !important; }
+    #ChartWellBlog .pr-md-3,
+    #ChartWellBlog .px-md-3 {
+      padding-right: 1rem !important; }
+    #ChartWellBlog .pb-md-3,
+    #ChartWellBlog .py-md-3 {
+      padding-bottom: 1rem !important; }
+    #ChartWellBlog .pl-md-3,
+    #ChartWellBlog .px-md-3 {
+      padding-left: 1rem !important; }
+    #ChartWellBlog .p-md-4 {
+      padding: 1.5rem !important; }
+    #ChartWellBlog .pt-md-4,
+    #ChartWellBlog .py-md-4 {
+      padding-top: 1.5rem !important; }
+    #ChartWellBlog .pr-md-4,
+    #ChartWellBlog .px-md-4 {
+      padding-right: 1.5rem !important; }
+    #ChartWellBlog .pb-md-4,
+    #ChartWellBlog .py-md-4 {
+      padding-bottom: 1.5rem !important; }
+    #ChartWellBlog .pl-md-4,
+    #ChartWellBlog .px-md-4 {
+      padding-left: 1.5rem !important; }
+    #ChartWellBlog .p-md-5 {
+      padding: 3rem !important; }
+    #ChartWellBlog .pt-md-5,
+    #ChartWellBlog .py-md-5 {
+      padding-top: 3rem !important; }
+    #ChartWellBlog .pr-md-5,
+    #ChartWellBlog .px-md-5 {
+      padding-right: 3rem !important; }
+    #ChartWellBlog .pb-md-5,
+    #ChartWellBlog .py-md-5 {
+      padding-bottom: 3rem !important; }
+    #ChartWellBlog .pl-md-5,
+    #ChartWellBlog .px-md-5 {
+      padding-left: 3rem !important; }
+    #ChartWellBlog .m-md-n1 {
+      margin: -0.25rem !important; }
+    #ChartWellBlog .mt-md-n1,
+    #ChartWellBlog .my-md-n1 {
+      margin-top: -0.25rem !important; }
+    #ChartWellBlog .mr-md-n1,
+    #ChartWellBlog .mx-md-n1 {
+      margin-right: -0.25rem !important; }
+    #ChartWellBlog .mb-md-n1,
+    #ChartWellBlog .my-md-n1 {
+      margin-bottom: -0.25rem !important; }
+    #ChartWellBlog .ml-md-n1,
+    #ChartWellBlog .mx-md-n1 {
+      margin-left: -0.25rem !important; }
+    #ChartWellBlog .m-md-n2 {
+      margin: -0.5rem !important; }
+    #ChartWellBlog .mt-md-n2,
+    #ChartWellBlog .my-md-n2 {
+      margin-top: -0.5rem !important; }
+    #ChartWellBlog .mr-md-n2,
+    #ChartWellBlog .mx-md-n2 {
+      margin-right: -0.5rem !important; }
+    #ChartWellBlog .mb-md-n2,
+    #ChartWellBlog .my-md-n2 {
+      margin-bottom: -0.5rem !important; }
+    #ChartWellBlog .ml-md-n2,
+    #ChartWellBlog .mx-md-n2 {
+      margin-left: -0.5rem !important; }
+    #ChartWellBlog .m-md-n3 {
+      margin: -1rem !important; }
+    #ChartWellBlog .mt-md-n3,
+    #ChartWellBlog .my-md-n3 {
+      margin-top: -1rem !important; }
+    #ChartWellBlog .mr-md-n3,
+    #ChartWellBlog .mx-md-n3 {
+      margin-right: -1rem !important; }
+    #ChartWellBlog .mb-md-n3,
+    #ChartWellBlog .my-md-n3 {
+      margin-bottom: -1rem !important; }
+    #ChartWellBlog .ml-md-n3,
+    #ChartWellBlog .mx-md-n3 {
+      margin-left: -1rem !important; }
+    #ChartWellBlog .m-md-n4 {
+      margin: -1.5rem !important; }
+    #ChartWellBlog .mt-md-n4,
+    #ChartWellBlog .my-md-n4 {
+      margin-top: -1.5rem !important; }
+    #ChartWellBlog .mr-md-n4,
+    #ChartWellBlog .mx-md-n4 {
+      margin-right: -1.5rem !important; }
+    #ChartWellBlog .mb-md-n4,
+    #ChartWellBlog .my-md-n4 {
+      margin-bottom: -1.5rem !important; }
+    #ChartWellBlog .ml-md-n4,
+    #ChartWellBlog .mx-md-n4 {
+      margin-left: -1.5rem !important; }
+    #ChartWellBlog .m-md-n5 {
+      margin: -3rem !important; }
+    #ChartWellBlog .mt-md-n5,
+    #ChartWellBlog .my-md-n5 {
+      margin-top: -3rem !important; }
+    #ChartWellBlog .mr-md-n5,
+    #ChartWellBlog .mx-md-n5 {
+      margin-right: -3rem !important; }
+    #ChartWellBlog .mb-md-n5,
+    #ChartWellBlog .my-md-n5 {
+      margin-bottom: -3rem !important; }
+    #ChartWellBlog .ml-md-n5,
+    #ChartWellBlog .mx-md-n5 {
+      margin-left: -3rem !important; }
+    #ChartWellBlog .m-md-auto {
+      margin: auto !important; }
+    #ChartWellBlog .mt-md-auto,
+    #ChartWellBlog .my-md-auto {
+      margin-top: auto !important; }
+    #ChartWellBlog .mr-md-auto,
+    #ChartWellBlog .mx-md-auto {
+      margin-right: auto !important; }
+    #ChartWellBlog .mb-md-auto,
+    #ChartWellBlog .my-md-auto {
+      margin-bottom: auto !important; }
+    #ChartWellBlog .ml-md-auto,
+    #ChartWellBlog .mx-md-auto {
+      margin-left: auto !important; } }
+  @media (min-width: 992px) {
+    #ChartWellBlog .m-lg-0 {
+      margin: 0 !important; }
+    #ChartWellBlog .mt-lg-0,
+    #ChartWellBlog .my-lg-0 {
+      margin-top: 0 !important; }
+    #ChartWellBlog .mr-lg-0,
+    #ChartWellBlog .mx-lg-0 {
+      margin-right: 0 !important; }
+    #ChartWellBlog .mb-lg-0,
+    #ChartWellBlog .my-lg-0 {
+      margin-bottom: 0 !important; }
+    #ChartWellBlog .ml-lg-0,
+    #ChartWellBlog .mx-lg-0 {
+      margin-left: 0 !important; }
+    #ChartWellBlog .m-lg-1 {
+      margin: 0.25rem !important; }
+    #ChartWellBlog .mt-lg-1,
+    #ChartWellBlog .my-lg-1 {
+      margin-top: 0.25rem !important; }
+    #ChartWellBlog .mr-lg-1,
+    #ChartWellBlog .mx-lg-1 {
+      margin-right: 0.25rem !important; }
+    #ChartWellBlog .mb-lg-1,
+    #ChartWellBlog .my-lg-1 {
+      margin-bottom: 0.25rem !important; }
+    #ChartWellBlog .ml-lg-1,
+    #ChartWellBlog .mx-lg-1 {
+      margin-left: 0.25rem !important; }
+    #ChartWellBlog .m-lg-2 {
+      margin: 0.5rem !important; }
+    #ChartWellBlog .mt-lg-2,
+    #ChartWellBlog .my-lg-2 {
+      margin-top: 0.5rem !important; }
+    #ChartWellBlog .mr-lg-2,
+    #ChartWellBlog .mx-lg-2 {
+      margin-right: 0.5rem !important; }
+    #ChartWellBlog .mb-lg-2,
+    #ChartWellBlog .my-lg-2 {
+      margin-bottom: 0.5rem !important; }
+    #ChartWellBlog .ml-lg-2,
+    #ChartWellBlog .mx-lg-2 {
+      margin-left: 0.5rem !important; }
+    #ChartWellBlog .m-lg-3 {
+      margin: 1rem !important; }
+    #ChartWellBlog .mt-lg-3,
+    #ChartWellBlog .my-lg-3 {
+      margin-top: 1rem !important; }
+    #ChartWellBlog .mr-lg-3,
+    #ChartWellBlog .mx-lg-3 {
+      margin-right: 1rem !important; }
+    #ChartWellBlog .mb-lg-3,
+    #ChartWellBlog .my-lg-3 {
+      margin-bottom: 1rem !important; }
+    #ChartWellBlog .ml-lg-3,
+    #ChartWellBlog .mx-lg-3 {
+      margin-left: 1rem !important; }
+    #ChartWellBlog .m-lg-4 {
+      margin: 1.5rem !important; }
+    #ChartWellBlog .mt-lg-4,
+    #ChartWellBlog .my-lg-4 {
+      margin-top: 1.5rem !important; }
+    #ChartWellBlog .mr-lg-4,
+    #ChartWellBlog .mx-lg-4 {
+      margin-right: 1.5rem !important; }
+    #ChartWellBlog .mb-lg-4,
+    #ChartWellBlog .my-lg-4 {
+      margin-bottom: 1.5rem !important; }
+    #ChartWellBlog .ml-lg-4,
+    #ChartWellBlog .mx-lg-4 {
+      margin-left: 1.5rem !important; }
+    #ChartWellBlog .m-lg-5 {
+      margin: 3rem !important; }
+    #ChartWellBlog .mt-lg-5,
+    #ChartWellBlog .my-lg-5 {
+      margin-top: 3rem !important; }
+    #ChartWellBlog .mr-lg-5,
+    #ChartWellBlog .mx-lg-5 {
+      margin-right: 3rem !important; }
+    #ChartWellBlog .mb-lg-5,
+    #ChartWellBlog .my-lg-5 {
+      margin-bottom: 3rem !important; }
+    #ChartWellBlog .ml-lg-5,
+    #ChartWellBlog .mx-lg-5 {
+      margin-left: 3rem !important; }
+    #ChartWellBlog .p-lg-0 {
+      padding: 0 !important; }
+    #ChartWellBlog .pt-lg-0,
+    #ChartWellBlog .py-lg-0 {
+      padding-top: 0 !important; }
+    #ChartWellBlog .pr-lg-0,
+    #ChartWellBlog .px-lg-0 {
+      padding-right: 0 !important; }
+    #ChartWellBlog .pb-lg-0,
+    #ChartWellBlog .py-lg-0 {
+      padding-bottom: 0 !important; }
+    #ChartWellBlog .pl-lg-0,
+    #ChartWellBlog .px-lg-0 {
+      padding-left: 0 !important; }
+    #ChartWellBlog .p-lg-1 {
+      padding: 0.25rem !important; }
+    #ChartWellBlog .pt-lg-1,
+    #ChartWellBlog .py-lg-1 {
+      padding-top: 0.25rem !important; }
+    #ChartWellBlog .pr-lg-1,
+    #ChartWellBlog .px-lg-1 {
+      padding-right: 0.25rem !important; }
+    #ChartWellBlog .pb-lg-1,
+    #ChartWellBlog .py-lg-1 {
+      padding-bottom: 0.25rem !important; }
+    #ChartWellBlog .pl-lg-1,
+    #ChartWellBlog .px-lg-1 {
+      padding-left: 0.25rem !important; }
+    #ChartWellBlog .p-lg-2 {
+      padding: 0.5rem !important; }
+    #ChartWellBlog .pt-lg-2,
+    #ChartWellBlog .py-lg-2 {
+      padding-top: 0.5rem !important; }
+    #ChartWellBlog .pr-lg-2,
+    #ChartWellBlog .px-lg-2 {
+      padding-right: 0.5rem !important; }
+    #ChartWellBlog .pb-lg-2,
+    #ChartWellBlog .py-lg-2 {
+      padding-bottom: 0.5rem !important; }
+    #ChartWellBlog .pl-lg-2,
+    #ChartWellBlog .px-lg-2 {
+      padding-left: 0.5rem !important; }
+    #ChartWellBlog .p-lg-3 {
+      padding: 1rem !important; }
+    #ChartWellBlog .pt-lg-3,
+    #ChartWellBlog .py-lg-3 {
+      padding-top: 1rem !important; }
+    #ChartWellBlog .pr-lg-3,
+    #ChartWellBlog .px-lg-3 {
+      padding-right: 1rem !important; }
+    #ChartWellBlog .pb-lg-3,
+    #ChartWellBlog .py-lg-3 {
+      padding-bottom: 1rem !important; }
+    #ChartWellBlog .pl-lg-3,
+    #ChartWellBlog .px-lg-3 {
+      padding-left: 1rem !important; }
+    #ChartWellBlog .p-lg-4 {
+      padding: 1.5rem !important; }
+    #ChartWellBlog .pt-lg-4,
+    #ChartWellBlog .py-lg-4 {
+      padding-top: 1.5rem !important; }
+    #ChartWellBlog .pr-lg-4,
+    #ChartWellBlog .px-lg-4 {
+      padding-right: 1.5rem !important; }
+    #ChartWellBlog .pb-lg-4,
+    #ChartWellBlog .py-lg-4 {
+      padding-bottom: 1.5rem !important; }
+    #ChartWellBlog .pl-lg-4,
+    #ChartWellBlog .px-lg-4 {
+      padding-left: 1.5rem !important; }
+    #ChartWellBlog .p-lg-5 {
+      padding: 3rem !important; }
+    #ChartWellBlog .pt-lg-5,
+    #ChartWellBlog .py-lg-5 {
+      padding-top: 3rem !important; }
+    #ChartWellBlog .pr-lg-5,
+    #ChartWellBlog .px-lg-5 {
+      padding-right: 3rem !important; }
+    #ChartWellBlog .pb-lg-5,
+    #ChartWellBlog .py-lg-5 {
+      padding-bottom: 3rem !important; }
+    #ChartWellBlog .pl-lg-5,
+    #ChartWellBlog .px-lg-5 {
+      padding-left: 3rem !important; }
+    #ChartWellBlog .m-lg-n1 {
+      margin: -0.25rem !important; }
+    #ChartWellBlog .mt-lg-n1,
+    #ChartWellBlog .my-lg-n1 {
+      margin-top: -0.25rem !important; }
+    #ChartWellBlog .mr-lg-n1,
+    #ChartWellBlog .mx-lg-n1 {
+      margin-right: -0.25rem !important; }
+    #ChartWellBlog .mb-lg-n1,
+    #ChartWellBlog .my-lg-n1 {
+      margin-bottom: -0.25rem !important; }
+    #ChartWellBlog .ml-lg-n1,
+    #ChartWellBlog .mx-lg-n1 {
+      margin-left: -0.25rem !important; }
+    #ChartWellBlog .m-lg-n2 {
+      margin: -0.5rem !important; }
+    #ChartWellBlog .mt-lg-n2,
+    #ChartWellBlog .my-lg-n2 {
+      margin-top: -0.5rem !important; }
+    #ChartWellBlog .mr-lg-n2,
+    #ChartWellBlog .mx-lg-n2 {
+      margin-right: -0.5rem !important; }
+    #ChartWellBlog .mb-lg-n2,
+    #ChartWellBlog .my-lg-n2 {
+      margin-bottom: -0.5rem !important; }
+    #ChartWellBlog .ml-lg-n2,
+    #ChartWellBlog .mx-lg-n2 {
+      margin-left: -0.5rem !important; }
+    #ChartWellBlog .m-lg-n3 {
+      margin: -1rem !important; }
+    #ChartWellBlog .mt-lg-n3,
+    #ChartWellBlog .my-lg-n3 {
+      margin-top: -1rem !important; }
+    #ChartWellBlog .mr-lg-n3,
+    #ChartWellBlog .mx-lg-n3 {
+      margin-right: -1rem !important; }
+    #ChartWellBlog .mb-lg-n3,
+    #ChartWellBlog .my-lg-n3 {
+      margin-bottom: -1rem !important; }
+    #ChartWellBlog .ml-lg-n3,
+    #ChartWellBlog .mx-lg-n3 {
+      margin-left: -1rem !important; }
+    #ChartWellBlog .m-lg-n4 {
+      margin: -1.5rem !important; }
+    #ChartWellBlog .mt-lg-n4,
+    #ChartWellBlog .my-lg-n4 {
+      margin-top: -1.5rem !important; }
+    #ChartWellBlog .mr-lg-n4,
+    #ChartWellBlog .mx-lg-n4 {
+      margin-right: -1.5rem !important; }
+    #ChartWellBlog .mb-lg-n4,
+    #ChartWellBlog .my-lg-n4 {
+      margin-bottom: -1.5rem !important; }
+    #ChartWellBlog .ml-lg-n4,
+    #ChartWellBlog .mx-lg-n4 {
+      margin-left: -1.5rem !important; }
+    #ChartWellBlog .m-lg-n5 {
+      margin: -3rem !important; }
+    #ChartWellBlog .mt-lg-n5,
+    #ChartWellBlog .my-lg-n5 {
+      margin-top: -3rem !important; }
+    #ChartWellBlog .mr-lg-n5,
+    #ChartWellBlog .mx-lg-n5 {
+      margin-right: -3rem !important; }
+    #ChartWellBlog .mb-lg-n5,
+    #ChartWellBlog .my-lg-n5 {
+      margin-bottom: -3rem !important; }
+    #ChartWellBlog .ml-lg-n5,
+    #ChartWellBlog .mx-lg-n5 {
+      margin-left: -3rem !important; }
+    #ChartWellBlog .m-lg-auto {
+      margin: auto !important; }
+    #ChartWellBlog .mt-lg-auto,
+    #ChartWellBlog .my-lg-auto {
+      margin-top: auto !important; }
+    #ChartWellBlog .mr-lg-auto,
+    #ChartWellBlog .mx-lg-auto {
+      margin-right: auto !important; }
+    #ChartWellBlog .mb-lg-auto,
+    #ChartWellBlog .my-lg-auto {
+      margin-bottom: auto !important; }
+    #ChartWellBlog .ml-lg-auto,
+    #ChartWellBlog .mx-lg-auto {
+      margin-left: auto !important; } }
+  @media (min-width: 1200px) {
+    #ChartWellBlog .m-xl-0 {
+      margin: 0 !important; }
+    #ChartWellBlog .mt-xl-0,
+    #ChartWellBlog .my-xl-0 {
+      margin-top: 0 !important; }
+    #ChartWellBlog .mr-xl-0,
+    #ChartWellBlog .mx-xl-0 {
+      margin-right: 0 !important; }
+    #ChartWellBlog .mb-xl-0,
+    #ChartWellBlog .my-xl-0 {
+      margin-bottom: 0 !important; }
+    #ChartWellBlog .ml-xl-0,
+    #ChartWellBlog .mx-xl-0 {
+      margin-left: 0 !important; }
+    #ChartWellBlog .m-xl-1 {
+      margin: 0.25rem !important; }
+    #ChartWellBlog .mt-xl-1,
+    #ChartWellBlog .my-xl-1 {
+      margin-top: 0.25rem !important; }
+    #ChartWellBlog .mr-xl-1,
+    #ChartWellBlog .mx-xl-1 {
+      margin-right: 0.25rem !important; }
+    #ChartWellBlog .mb-xl-1,
+    #ChartWellBlog .my-xl-1 {
+      margin-bottom: 0.25rem !important; }
+    #ChartWellBlog .ml-xl-1,
+    #ChartWellBlog .mx-xl-1 {
+      margin-left: 0.25rem !important; }
+    #ChartWellBlog .m-xl-2 {
+      margin: 0.5rem !important; }
+    #ChartWellBlog .mt-xl-2,
+    #ChartWellBlog .my-xl-2 {
+      margin-top: 0.5rem !important; }
+    #ChartWellBlog .mr-xl-2,
+    #ChartWellBlog .mx-xl-2 {
+      margin-right: 0.5rem !important; }
+    #ChartWellBlog .mb-xl-2,
+    #ChartWellBlog .my-xl-2 {
+      margin-bottom: 0.5rem !important; }
+    #ChartWellBlog .ml-xl-2,
+    #ChartWellBlog .mx-xl-2 {
+      margin-left: 0.5rem !important; }
+    #ChartWellBlog .m-xl-3 {
+      margin: 1rem !important; }
+    #ChartWellBlog .mt-xl-3,
+    #ChartWellBlog .my-xl-3 {
+      margin-top: 1rem !important; }
+    #ChartWellBlog .mr-xl-3,
+    #ChartWellBlog .mx-xl-3 {
+      margin-right: 1rem !important; }
+    #ChartWellBlog .mb-xl-3,
+    #ChartWellBlog .my-xl-3 {
+      margin-bottom: 1rem !important; }
+    #ChartWellBlog .ml-xl-3,
+    #ChartWellBlog .mx-xl-3 {
+      margin-left: 1rem !important; }
+    #ChartWellBlog .m-xl-4 {
+      margin: 1.5rem !important; }
+    #ChartWellBlog .mt-xl-4,
+    #ChartWellBlog .my-xl-4 {
+      margin-top: 1.5rem !important; }
+    #ChartWellBlog .mr-xl-4,
+    #ChartWellBlog .mx-xl-4 {
+      margin-right: 1.5rem !important; }
+    #ChartWellBlog .mb-xl-4,
+    #ChartWellBlog .my-xl-4 {
+      margin-bottom: 1.5rem !important; }
+    #ChartWellBlog .ml-xl-4,
+    #ChartWellBlog .mx-xl-4 {
+      margin-left: 1.5rem !important; }
+    #ChartWellBlog .m-xl-5 {
+      margin: 3rem !important; }
+    #ChartWellBlog .mt-xl-5,
+    #ChartWellBlog .my-xl-5 {
+      margin-top: 3rem !important; }
+    #ChartWellBlog .mr-xl-5,
+    #ChartWellBlog .mx-xl-5 {
+      margin-right: 3rem !important; }
+    #ChartWellBlog .mb-xl-5,
+    #ChartWellBlog .my-xl-5 {
+      margin-bottom: 3rem !important; }
+    #ChartWellBlog .ml-xl-5,
+    #ChartWellBlog .mx-xl-5 {
+      margin-left: 3rem !important; }
+    #ChartWellBlog .p-xl-0 {
+      padding: 0 !important; }
+    #ChartWellBlog .pt-xl-0,
+    #ChartWellBlog .py-xl-0 {
+      padding-top: 0 !important; }
+    #ChartWellBlog .pr-xl-0,
+    #ChartWellBlog .px-xl-0 {
+      padding-right: 0 !important; }
+    #ChartWellBlog .pb-xl-0,
+    #ChartWellBlog .py-xl-0 {
+      padding-bottom: 0 !important; }
+    #ChartWellBlog .pl-xl-0,
+    #ChartWellBlog .px-xl-0 {
+      padding-left: 0 !important; }
+    #ChartWellBlog .p-xl-1 {
+      padding: 0.25rem !important; }
+    #ChartWellBlog .pt-xl-1,
+    #ChartWellBlog .py-xl-1 {
+      padding-top: 0.25rem !important; }
+    #ChartWellBlog .pr-xl-1,
+    #ChartWellBlog .px-xl-1 {
+      padding-right: 0.25rem !important; }
+    #ChartWellBlog .pb-xl-1,
+    #ChartWellBlog .py-xl-1 {
+      padding-bottom: 0.25rem !important; }
+    #ChartWellBlog .pl-xl-1,
+    #ChartWellBlog .px-xl-1 {
+      padding-left: 0.25rem !important; }
+    #ChartWellBlog .p-xl-2 {
+      padding: 0.5rem !important; }
+    #ChartWellBlog .pt-xl-2,
+    #ChartWellBlog .py-xl-2 {
+      padding-top: 0.5rem !important; }
+    #ChartWellBlog .pr-xl-2,
+    #ChartWellBlog .px-xl-2 {
+      padding-right: 0.5rem !important; }
+    #ChartWellBlog .pb-xl-2,
+    #ChartWellBlog .py-xl-2 {
+      padding-bottom: 0.5rem !important; }
+    #ChartWellBlog .pl-xl-2,
+    #ChartWellBlog .px-xl-2 {
+      padding-left: 0.5rem !important; }
+    #ChartWellBlog .p-xl-3 {
+      padding: 1rem !important; }
+    #ChartWellBlog .pt-xl-3,
+    #ChartWellBlog .py-xl-3 {
+      padding-top: 1rem !important; }
+    #ChartWellBlog .pr-xl-3,
+    #ChartWellBlog .px-xl-3 {
+      padding-right: 1rem !important; }
+    #ChartWellBlog .pb-xl-3,
+    #ChartWellBlog .py-xl-3 {
+      padding-bottom: 1rem !important; }
+    #ChartWellBlog .pl-xl-3,
+    #ChartWellBlog .px-xl-3 {
+      padding-left: 1rem !important; }
+    #ChartWellBlog .p-xl-4 {
+      padding: 1.5rem !important; }
+    #ChartWellBlog .pt-xl-4,
+    #ChartWellBlog .py-xl-4 {
+      padding-top: 1.5rem !important; }
+    #ChartWellBlog .pr-xl-4,
+    #ChartWellBlog .px-xl-4 {
+      padding-right: 1.5rem !important; }
+    #ChartWellBlog .pb-xl-4,
+    #ChartWellBlog .py-xl-4 {
+      padding-bottom: 1.5rem !important; }
+    #ChartWellBlog .pl-xl-4,
+    #ChartWellBlog .px-xl-4 {
+      padding-left: 1.5rem !important; }
+    #ChartWellBlog .p-xl-5 {
+      padding: 3rem !important; }
+    #ChartWellBlog .pt-xl-5,
+    #ChartWellBlog .py-xl-5 {
+      padding-top: 3rem !important; }
+    #ChartWellBlog .pr-xl-5,
+    #ChartWellBlog .px-xl-5 {
+      padding-right: 3rem !important; }
+    #ChartWellBlog .pb-xl-5,
+    #ChartWellBlog .py-xl-5 {
+      padding-bottom: 3rem !important; }
+    #ChartWellBlog .pl-xl-5,
+    #ChartWellBlog .px-xl-5 {
+      padding-left: 3rem !important; }
+    #ChartWellBlog .m-xl-n1 {
+      margin: -0.25rem !important; }
+    #ChartWellBlog .mt-xl-n1,
+    #ChartWellBlog .my-xl-n1 {
+      margin-top: -0.25rem !important; }
+    #ChartWellBlog .mr-xl-n1,
+    #ChartWellBlog .mx-xl-n1 {
+      margin-right: -0.25rem !important; }
+    #ChartWellBlog .mb-xl-n1,
+    #ChartWellBlog .my-xl-n1 {
+      margin-bottom: -0.25rem !important; }
+    #ChartWellBlog .ml-xl-n1,
+    #ChartWellBlog .mx-xl-n1 {
+      margin-left: -0.25rem !important; }
+    #ChartWellBlog .m-xl-n2 {
+      margin: -0.5rem !important; }
+    #ChartWellBlog .mt-xl-n2,
+    #ChartWellBlog .my-xl-n2 {
+      margin-top: -0.5rem !important; }
+    #ChartWellBlog .mr-xl-n2,
+    #ChartWellBlog .mx-xl-n2 {
+      margin-right: -0.5rem !important; }
+    #ChartWellBlog .mb-xl-n2,
+    #ChartWellBlog .my-xl-n2 {
+      margin-bottom: -0.5rem !important; }
+    #ChartWellBlog .ml-xl-n2,
+    #ChartWellBlog .mx-xl-n2 {
+      margin-left: -0.5rem !important; }
+    #ChartWellBlog .m-xl-n3 {
+      margin: -1rem !important; }
+    #ChartWellBlog .mt-xl-n3,
+    #ChartWellBlog .my-xl-n3 {
+      margin-top: -1rem !important; }
+    #ChartWellBlog .mr-xl-n3,
+    #ChartWellBlog .mx-xl-n3 {
+      margin-right: -1rem !important; }
+    #ChartWellBlog .mb-xl-n3,
+    #ChartWellBlog .my-xl-n3 {
+      margin-bottom: -1rem !important; }
+    #ChartWellBlog .ml-xl-n3,
+    #ChartWellBlog .mx-xl-n3 {
+      margin-left: -1rem !important; }
+    #ChartWellBlog .m-xl-n4 {
+      margin: -1.5rem !important; }
+    #ChartWellBlog .mt-xl-n4,
+    #ChartWellBlog .my-xl-n4 {
+      margin-top: -1.5rem !important; }
+    #ChartWellBlog .mr-xl-n4,
+    #ChartWellBlog .mx-xl-n4 {
+      margin-right: -1.5rem !important; }
+    #ChartWellBlog .mb-xl-n4,
+    #ChartWellBlog .my-xl-n4 {
+      margin-bottom: -1.5rem !important; }
+    #ChartWellBlog .ml-xl-n4,
+    #ChartWellBlog .mx-xl-n4 {
+      margin-left: -1.5rem !important; }
+    #ChartWellBlog .m-xl-n5 {
+      margin: -3rem !important; }
+    #ChartWellBlog .mt-xl-n5,
+    #ChartWellBlog .my-xl-n5 {
+      margin-top: -3rem !important; }
+    #ChartWellBlog .mr-xl-n5,
+    #ChartWellBlog .mx-xl-n5 {
+      margin-right: -3rem !important; }
+    #ChartWellBlog .mb-xl-n5,
+    #ChartWellBlog .my-xl-n5 {
+      margin-bottom: -3rem !important; }
+    #ChartWellBlog .ml-xl-n5,
+    #ChartWellBlog .mx-xl-n5 {
+      margin-left: -3rem !important; }
+    #ChartWellBlog .m-xl-auto {
+      margin: auto !important; }
+    #ChartWellBlog .mt-xl-auto,
+    #ChartWellBlog .my-xl-auto {
+      margin-top: auto !important; }
+    #ChartWellBlog .mr-xl-auto,
+    #ChartWellBlog .mx-xl-auto {
+      margin-right: auto !important; }
+    #ChartWellBlog .mb-xl-auto,
+    #ChartWellBlog .my-xl-auto {
+      margin-bottom: auto !important; }
+    #ChartWellBlog .ml-xl-auto,
+    #ChartWellBlog .mx-xl-auto {
+      margin-left: auto !important; } }
+  #ChartWellBlog p, #ChartWellBlog td, #ChartWellBlog div, #ChartWellBlog a {
+    font-family: "Montserrat", sans-serif; }
+  #ChartWellBlog h1, #ChartWellBlog h2, #ChartWellBlog h3, #ChartWellBlog h4, #ChartWellBlog h5, #ChartWellBlog h6 {
+    font-weight: bold; }
+    #ChartWellBlog h1 a, #ChartWellBlog h2 a, #ChartWellBlog h3 a, #ChartWellBlog h4 a, #ChartWellBlog h5 a, #ChartWellBlog h6 a {
+      font-weight: bold; }
+  #ChartWellBlog .logoEn img {
+    max-width: 185px;
+    margin: 0px 10px 10px 10px; }
+  #ChartWellBlog #ChartWellBlogTop {
+    height: 0;
+    overflow: hidden;
+    margin: 0 0 0 0; }
+    #ChartWellBlog #ChartWellBlogTop form, #ChartWellBlog #ChartWellBlogTop form .form-group {
+      margin: 0;
+      width: 100%; }
+      #ChartWellBlog #ChartWellBlogTop form .searchIcon, #ChartWellBlog #ChartWellBlogTop form .form-group .searchIcon {
+        margin-top: 4px;
+        margin-left: -40px;
+        cursor: pointer; }
+      #ChartWellBlog #ChartWellBlogTop form #txtSearchStatic.form-control, #ChartWellBlog #ChartWellBlogTop form .form-group #txtSearchStatic.form-control {
+        font-size: 0.9rem;
+        border-radius: 1px;
+        padding: .25rem .40px .25rem .5rem;
+        height: calc(2rem + 2px);
+        width: calc(100% - 40px);
+        float: left; }
+  #ChartWellBlog #ChartWellBlogNavContainer {
+    margin: 0; }
+  #ChartWellBlog #ChartWellBlogNav {
+    width: 100%;
+    z-index: 999;
+    display: block;
+    background-color: white;
+    transition: top .5s ease-in;
+    border-bottom: 1px solid #dfdfdf;
+    padding: 0;
+    display: flex; }
+    #ChartWellBlog #ChartWellBlogNav .navbar-nav {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      padding: 0;
+      margin: 0; }
+    #ChartWellBlog #ChartWellBlogNav .nav-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.3rem 0.55rem;
+      min-height: 40px; }
+      #ChartWellBlog #ChartWellBlogNav .nav-item .nav-link {
+        text-align: center;
+        color: black;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: bold;
+        padding-top: 7px;
+        padding-bottom: 7px; }
+      #ChartWellBlog #ChartWellBlogNav .nav-item:hover {
+        box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
+        background-color: #dfdfdf; }
+        #ChartWellBlog #ChartWellBlogNav .nav-item:hover .nav-link {
+          color: black;
+          text-shadow: 1px 1px 0 white, -1px -1px 0 rgba(0, 0, 0, 0.25);
+          text-decoration: none; }
+  #ChartWellBlog #ChartWellBlogBody {
+    font-family: "Montserrat", sans-serif;
+    margin-left: 0;
+    margin-right: 0; }
+    #ChartWellBlog #ChartWellBlogBody .isSearch {
+      padding: 4rem;
+      min-height: 800px; }
+      #ChartWellBlog #ChartWellBlogBody .isSearch .cwbPostsList {
+        margin-bottom: 2rem; }
+      #ChartWellBlog #ChartWellBlogBody .isSearch .searchListingPost {
+        margin-top: 2rem; }
+        #ChartWellBlog #ChartWellBlogBody .isSearch .searchListingPost .cwbListPost {
+          background-image: none !important; }
+          #ChartWellBlog #ChartWellBlogBody .isSearch .searchListingPost .cwbListPost .cwbListPostContent h2 {
+            font-size: 20px;
+            margin-top: 1rem; }
+          #ChartWellBlog #ChartWellBlogBody .isSearch .searchListingPost .cwbListPost .tags, #ChartWellBlog #ChartWellBlogBody .isSearch .searchListingPost .cwbListPost .categories {
+            font-size: 14px;
+            margin-top: 5px; }
+            #ChartWellBlog #ChartWellBlogBody .isSearch .searchListingPost .cwbListPost .tags a, #ChartWellBlog #ChartWellBlogBody .isSearch .searchListingPost .cwbListPost .categories a {
+              color: black; }
+          #ChartWellBlog #ChartWellBlogBody .isSearch .searchListingPost .cwbListPost .tags {
+            display: none; }
+    #ChartWellBlog #ChartWellBlogBody #cwbFeatured #XB-Left {
+      background: #fff;
+      margin: 0 0 0 0;
+      max-width: 100%;
+      border-radius: 0;
+      box-shadow: none; }
+    #ChartWellBlog #ChartWellBlogBody .cwbWidget {
+      padding-bottom: 15px; }
+      #ChartWellBlog #ChartWellBlogBody .cwbWidget .cwbWidgetPostsContainer {
+        background: transparent;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+        border-radius: 0;
+        box-shadow: none; }
+        #ChartWellBlog #ChartWellBlogBody .cwbWidget .cwbWidgetPostsContainer .cwbWidgetPost {
+          padding: 1rem 0 1rem 0;
+          background-color: white; }
+          #ChartWellBlog #ChartWellBlogBody .cwbWidget .cwbWidgetPostsContainer .cwbWidgetPost .featuredArticleImg {
+            width: 100%;
+            display: block;
+            padding-top: 50%;
+            overflow: hidden;
+            position: relative; }
+            #ChartWellBlog #ChartWellBlogBody .cwbWidget .cwbWidgetPostsContainer .cwbWidgetPost .featuredArticleImg img {
+              width: 100%;
+              max-width: 100% !important;
+              border-radius: 0;
+              position: absolute;
+              top: 0;
+              left: 0; }
+          #ChartWellBlog #ChartWellBlogBody .cwbWidget .cwbWidgetPostsContainer .cwbWidgetPost p.featuredArticle {
+            font-size: 12px;
+            line-height: 16px;
+            margin: 1rem 0 1rem 0; }
+          #ChartWellBlog #ChartWellBlogBody .cwbWidget .cwbWidgetPostsContainer .cwbWidgetPost a.featuredArticleLink {
+            color: black;
+            font-weight: bold; }
+            #ChartWellBlog #ChartWellBlogBody .cwbWidget .cwbWidgetPostsContainer .cwbWidgetPost a.featuredArticleLink:hover {
+              color: #0072bc; }
+        #ChartWellBlog #ChartWellBlogBody .cwbWidget .cwbWidgetPostsContainer .carousel-item {
+          display: block;
+          float: none;
+          margin-right: 0;
+          overflow: auto;
+          z-index: 1; }
+        #ChartWellBlog #ChartWellBlogBody .cwbWidget .cwbWidgetPostsContainer .carousel-control-prev, #ChartWellBlog #ChartWellBlogBody .cwbWidget .cwbWidgetPostsContainer .carousel-control-next {
+          display: none; }
+        #ChartWellBlog #ChartWellBlogBody .cwbWidget .cwbWidgetPostsContainer.carousel.slide .carousel-inner {
+          width: calc(100% - 38%);
+          margin: 0 auto; }
+        #ChartWellBlog #ChartWellBlogBody .cwbWidget .cwbWidgetPostsContainer.carousel.slide .carousel-item {
+          float: left;
+          margin-right: -100%;
+          overflow: auto;
+          border-bottom: none; }
+          #ChartWellBlog #ChartWellBlogBody .cwbWidget .cwbWidgetPostsContainer.carousel.slide .carousel-item:first-child {
+            display: block; }
+          #ChartWellBlog #ChartWellBlogBody .cwbWidget .cwbWidgetPostsContainer.carousel.slide .carousel-item.active {
+            z-index: 2; }
+          #ChartWellBlog #ChartWellBlogBody .cwbWidget .cwbWidgetPostsContainer.carousel.slide .carousel-item.active, #ChartWellBlog #ChartWellBlogBody .cwbWidget .cwbWidgetPostsContainer.carousel.slide .carousel-item.carousel-item-next, #ChartWellBlog #ChartWellBlogBody .cwbWidget .cwbWidgetPostsContainer.carousel.slide .carousel-item.carousel-item-prev {
+            display: block; }
+        #ChartWellBlog #ChartWellBlogBody .cwbWidget .cwbWidgetPostsContainer.carousel.slide .carousel-control-prev, #ChartWellBlog #ChartWellBlogBody .cwbWidget .cwbWidgetPostsContainer.carousel.slide .carousel-control-next {
+          display: flex; }
+      #ChartWellBlog #ChartWellBlogBody .cwbWidget h3 {
+        font-size: 14px !important;
+        line-height: 14px !important;
+        text-transform: uppercase !important;
+        padding: 35px 15px 15px 5px !important;
+        border-bottom: 1px solid #dfdfdf !important;
+        margin-bottom: 0 !important;
+        font-weight: bold  !important; }
+    #ChartWellBlog #ChartWellBlogBody .shadow {
+      margin: 0;
+      padding: 0;
+      transition: margin 0.25s linear; }
+      #ChartWellBlog #ChartWellBlogBody .shadow .cwbListPost {
+        max-height: 500px;
+        height: 500px;
+        overflow: hidden;
+        box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.15);
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 40%;
+        margin: 20px 20px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+        border: 0px solid white;
+        cursor: pointer; }
+        #ChartWellBlog #ChartWellBlogBody .shadow .cwbListPost .cwbListPostContent {
+          margin: 0;
+          padding: 3% 8% 5% 8%;
+          background-color: rgba(255, 255, 255, 0.925);
+          overflow: hidden;
+          color: black;
+          position: absolute;
+          bottom: 10px;
+          left: 0px;
+          width: 100%; }
+          #ChartWellBlog #ChartWellBlogBody .shadow .cwbListPost .cwbListPostContent h2 {
+            font-weight: bold;
+            font-size: 1.35rem; }
+          #ChartWellBlog #ChartWellBlogBody .shadow .cwbListPost .cwbListPostContent .previewText {
+            color: black;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: 14px;
+            font-weight: 100;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            margin: 1rem 0 0.5rem 0; }
+          #ChartWellBlog #ChartWellBlogBody .shadow .cwbListPost .cwbListPostContent .tags, #ChartWellBlog #ChartWellBlogBody .shadow .cwbListPost .cwbListPostContent .readmore {
+            display: none; }
+          #ChartWellBlog #ChartWellBlogBody .shadow .cwbListPost .cwbListPostContent .categories {
+            text-transform: uppercase;
+            font-size: 12px;
+            border-top: 1px solid rgba(255, 255, 255, 0.25);
+            letter-spacing: 1px;
+            padding-top: 10px; }
+          #ChartWellBlog #ChartWellBlogBody .shadow .cwbListPost .cwbListPostContent a {
+            color: black; }
+      #ChartWellBlog #ChartWellBlogBody .shadow:hover .cwbListPost {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.25);
+        transition: margin 0.25s linear; }
+    #ChartWellBlog #ChartWellBlogBody .cwbPostDetail {
+      padding: 2rem 6rem 2rem 12rem; }
+      #ChartWellBlog #ChartWellBlogBody .cwbPostDetail .small {
+        font-size: 0.875rem;
+        font-weight: 100; }
+      #ChartWellBlog #ChartWellBlogBody .cwbPostDetail .articleAuthor, #ChartWellBlog #ChartWellBlogBody .cwbPostDetail .articleDate {
+        display: inline-block;
+        margin-right: 1rem; }
+      #ChartWellBlog #ChartWellBlogBody .cwbPostDetail h1.articleHeadline {
+        margin: 2rem 0 2rem;
+        font-weight: bold;
+        font-size: 2.35rem; }
+      #ChartWellBlog #ChartWellBlogBody .cwbPostDetail p {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.95rem; }
+      #ChartWellBlog #ChartWellBlogBody .cwbPostDetail .social {
+        list-style-type: none;
+        position: absolute;
+        left: 2.5rem;
+        top: 11rem;
+        padding-left: 1rem; }
+        #ChartWellBlog #ChartWellBlogBody .cwbPostDetail .social li {
+          width: 40px;
+          height: 40px;
+          overflow: hidden;
+          display: block;
+          margin-bottom: 10px; }
+          #ChartWellBlog #ChartWellBlogBody .cwbPostDetail .social li .text {
+            display: none; }
+      #ChartWellBlog #ChartWellBlogBody .cwbPostDetail .articleBody, #ChartWellBlog #ChartWellBlogBody .cwbPostDetail .articleTags {
+        margin-top: 2rem; }
+      #ChartWellBlog #ChartWellBlogBody .cwbPostDetail .articleTags a {
+        text-transform: capitalize; }
+      #ChartWellBlog #ChartWellBlogBody .cwbPostDetail .articleBody .cwbPostMainImage {
+        display: block;
+        width: 110%;
+        margin-left: -5%;
+        padding-top: 56.25%;
+        /* 16:9 Aspect Ratio */
+        position: relative;
+        overflow: hidden; }
+        #ChartWellBlog #ChartWellBlogBody .cwbPostDetail .articleBody .cwbPostMainImage img {
+          position: absolute;
+          top: -25%;
+          left: 0;
+          right: 0;
+          width: 100%; }
+    #ChartWellBlog #ChartWellBlogBody #cwbContactForm {
+      padding-top: 3rem;
+      position: relative; }
+      #ChartWellBlog #ChartWellBlogBody #cwbContactForm .cwbContactFormFloater {
+        position: absolute; }
+    #ChartWellBlog #ChartWellBlogBody #RelatedPosts {
+      padding: 2rem 6rem 2rem 12rem; }
+      #ChartWellBlog #ChartWellBlogBody #RelatedPosts h3 {
+        font-size: 14px !important;
+        line-height: 14px !important;
+        text-transform: uppercase !important;
+        padding: 35px 15px 15px 5px !important;
+        border-top: 1px solid #dfdfdf !important;
+        margin-bottom: 1rem !important;
+        font-weight: bold  !important;
+        text-align: center; }
+      #ChartWellBlog #ChartWellBlogBody #RelatedPosts .relatedPostsContainer .relatedPost {
+        padding: 0 1.5rem; }
+        #ChartWellBlog #ChartWellBlogBody #RelatedPosts .relatedPostsContainer .relatedPost .postTitle p {
+          font-size: 0.825rem;
+          line-height: 1rem; }
+        #ChartWellBlog #ChartWellBlogBody #RelatedPosts .relatedPostsContainer .relatedPost .postTitle h4 {
+          margin-top: 1.5rem; }
+        #ChartWellBlog #ChartWellBlogBody #RelatedPosts .relatedPostsContainer .relatedPost .postTitle a {
+          color: black; }
+        #ChartWellBlog #ChartWellBlogBody #RelatedPosts .relatedPostsContainer .relatedPost .postImage {
+          display: block;
+          width: 100%;
+          padding-top: 56.25%;
+          /* 16:9 Aspect Ratio */
+          position: relative;
+          overflow: hidden; }
+          #ChartWellBlog #ChartWellBlogBody #RelatedPosts .relatedPostsContainer .relatedPost .postImage img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%; }
+    #ChartWellBlog #ChartWellBlogBody .pagination {
+      display: flex;
+      justify-content: center; }
+      #ChartWellBlog #ChartWellBlogBody .pagination a, #ChartWellBlog #ChartWellBlogBody .pagination span {
+        display: inline-flex;
+        padding: .5rem .75rem;
+        min-width: 3rem;
+        text-align: center;
+        border: 1px solid #dfdfdf;
+        justify-content: center;
+        margin-left: -1px;
+        font-size: 0.9rem;
+        color: #333; }
+      #ChartWellBlog #ChartWellBlogBody .pagination span {
+        color: black;
+        font-weight: bold;
+        background-color: #f4f4f4;
+        box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.5);
+        border: 0; }
+      #ChartWellBlog #ChartWellBlogBody .pagination a:hover, #ChartWellBlog #ChartWellBlogBody .pagination a:active {
+        text-decoration: none;
+        color: black;
+        background-color: #dfdfdf;
+        text-shadow: 1px 1px 0 white, -1px -1px 0 rgba(0, 0, 0, 0.25); }
+  #ChartWellBlog.sticky #ChartWellBlogBody {
+    margin-top: 180px; }
+    #ChartWellBlog.sticky #ChartWellBlogBody #cwbContactForm .cwbContactFormFloater.isSticky {
+      padding-top: 0px; }
+  #ChartWellBlog.sticky #ChartWellBlogTop {
+    height: 75px;
+    padding: .5rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 9999; }
+    #ChartWellBlog.sticky #ChartWellBlogTop .vert-align-mid {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+  #ChartWellBlog.sticky #ChartWellBlogNav {
+    position: fixed;
+    top: 74px;
+    left: 0;
+    width: 100%;
+    transition: top .5s ease-in;
+    border-bottom-width: 0px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.1); }
+
+@media screen and (max-width: 991px) {
+  #nearResidenceId.nearestResidencesTopRight {
+    margin-bottom: 35px; }
+
+  .sticky #ChartWellBlogBody #cwbContactForm .cwbContactFormFloater.isSticky {
+    padding-top: 100px; }
+
+  .navbar-nav {
+    flex-direction: row; }
+
+  #ChartWellBlog.sticky #ChartWellBlogBody {
+    margin-top: 135px; }
+
+  #ChartWellBlog #ChartWellBlogNav .nav-item .nav-link {
+    font-size: 13px;
+    font-weight: normal;
+    padding: .25rem;
+    font-family: "Helvetica Neue", "Helvetica", arial, sans-serif !important; }
+
+  #ChartWellBlog #ChartWellBlogBody #RelatedPosts {
+    padding: 4rem; }
+
+  #ChartWellBlog #ChartWellBlogBody .cwbPostDetail {
+    padding: 2rem 4rem; }
+    #ChartWellBlog #ChartWellBlogBody .cwbPostDetail .social {
+      position: relative;
+      left: auto;
+      top: auto;
+      padding: 0;
+      margin-top: 2rem; }
+      #ChartWellBlog #ChartWellBlogBody .cwbPostDetail .social li {
+        display: inline-block; }
+
+  .searchGradient .row .col-md-12 .col-md-2, .searchGradient .row .col-md-12 .col-md-3, .searchGradient .row .col-md-12 .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%; } }
+@media screen and (max-width: 767px) {
+  #ChartWellBlog .logoEn img {
+    width: auto !important; }
+
+  #nearResidenceId.nearestResidencesTopRight {
+    margin-bottom: 0px; }
+
+  .navbar {
+    padding: 0; }
+
+  .navbar-nav {
+    flex-direction: column;
+    justify-content: start !important; }
+
+  #ChartWellBlog #ChartWellBlogNavContainer {
+    width: 80px;
+    float: left; }
+
+  #ChartWellBlog.sticky #ChartWellBlogNavContainer {
+    z-index: 1;
+    margin: 0 0 0 0;
+    width: 80px; }
+
+  #ChartWellBlog #ChartWellBlogNav, #ChartWellBlog.sticky #ChartWellBlogNav {
+    height: calc(100%);
+    width: 80px;
+    border-bottom: 0; }
+
+  #ChartWellBlog #ChartWellBlogNav {
+    background-color: transparent; }
+
+  #ChartWellBlogTop {
+    border-bottom: 1px solid #dfdfdf;
+    background-color: white;
+    margin: 0 0 0 0; }
+
+  #ChartWellBlog #ChartWellBlogNav {
+    width: 80px;
+    border-right: 1px solid #dfdfdf;
+    border-top: 0px solid transparent;
+    height: calc(100% - 75px); }
+
+  #ChartWellBlog #ChartWellBlogNav .nav-item {
+    border-top: 1px solid white;
+    border-bottom: 1px solid #dfdfdf; }
+
+  #ChartWellBlog #ChartWellBlogNav .nav-item .nav-link {
+    font-size: 12px;
+    padding: 0.25rem .5rem;
+    font-weight: 400; }
+
+  #ChartWellBlog #ChartWellBlogBody {
+    position: relative;
+    margin-top: 0px;
+    margin-left: 79px;
+    width: calc(100% - 80px);
+    border-left: 1px solid #dfdfdf; }
+    #ChartWellBlog #ChartWellBlogBody #cwbContactForm {
+      padding: 2rem; }
+      #ChartWellBlog #ChartWellBlogBody #cwbContactForm .cwbContactFormFloater {
+        position: relative; }
+
+  #ChartWellBlog.sticky #ChartWellBlogBody {
+    margin-top: 40px; }
+
+  .cwbWidget h3 {
+    font-size: 16px;
+    padding: 25px 15px 15px 0px; }
+
+  .cwbWidget .cwbWidgetPostsContainer {
+    padding: 0 10px;
+    max-height: 55vh;
+    overflow-y: scroll;
+    border-bottom: 1px solid #dfdfdf;
+    border-left: 1px solid #dfdfdf; }
+
+  .relatedPost {
+    margin-bottom: 2rem; }
+
+  footer.container-fluid {
+    margin-left: 80px !important;
+    width: calc(100% - 80px); } }
+@media screen and (max-width: 575px) {
+  :root, body {
+    font-size: 14px; }
+
+  #ChartWellBlog .logoEn {
+    width: 49px;
+    margin-left: -3px;
+    overflow: hidden;
+    display: block;
+    margin-top: 2px; }
+
+  #ChartWellBlog .logoEn img {
+    width: 135px !important; }
+
+  #ChartWellBlog.sticky #ChartWellBlogTop {
+    height: 60px; }
+
+  #ChartWellBlog.sticky #ChartWellBlogNav {
+    top: 59px; }
+
+  #ChartWellBlog #ChartWellBlogNav .nav-item {
+    height: auto;
+    min-height: 40px; }
+
+  #ChartWellBlog.sticky #ChartWellBlogNav {
+    height: calc(100% - 60px); }
+
+  #ChartWellBlog.sticky #ChartWellBlogBody {
+    margin-top: 65px; }
+
+  #ChartWellBlog #ChartWellBlogBody #RelatedPosts {
+    padding: 1.5rem; }
+
+  .isSearch {
+    padding: 1.5rem !important;
+    min-height: 0 !important; }
+
+  #ChartWellBlog #ChartWellBlogBody .cwbPostDetail {
+    padding: 1.5rem; }
+    #ChartWellBlog #ChartWellBlogBody .cwbPostDetail .social, #ChartWellBlog #ChartWellBlogBody .cwbPostDetail .articleBody, #ChartWellBlog #ChartWellBlogBody .cwbPostDetail .articleTags {
+      margin-top: 1rem; }
+    #ChartWellBlog #ChartWellBlogBody .cwbPostDetail h1.articleHeadline {
+      margin: 2rem 0 1rem;
+      font-size: 1.5rem; }
+    #ChartWellBlog #ChartWellBlogBody .cwbPostDetail p {
+      margin-top: 1.25rem;
+      margin-bottom: 0.5rem;
+      line-height: 1.75rem; }
+
+  #heroImage #heroForm {
+    padding-top: 70px; }
+
+  footer {
+    margin-left: 80px !important; }
+
+  body.fr #heroImage #heroForm h1 {
+    font-size: 30px;
+    margin-top: 30px; } }
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #ChartWellBlog #ChartWellBlogBody .shadow .cwbListPost {
+    max-height: 500px;
+    height: 500px;
+    overflow: hidden;
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.15);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    margin: 15px 15px;
+    box-shadow: 0px 10px 29px rgba(0, 0, 0, 0.25);
+    border: 0px solid white; }
+    #ChartWellBlog #ChartWellBlogBody .shadow .cwbListPost:hover {
+      margin-top: 5px;
+      margin-bottom: 25px;
+      box-shadow: 0px 20px 19px rgba(0, 0, 0, 0.25); } }
+@media screen and (min-width: 1280px) {
+  #ChartWellBlogBody #cwbContactForm.col-md-3 {
+    flex: 0 0 20% !important;
+    max-width: 20% !important; }
+  #ChartWellBlogBody #cwbCenterBlockPostListings {
+    flex: 0 0 63.333333%;
+    max-width: 63.333333%; }
+    #ChartWellBlogBody #cwbCenterBlockPostListings.col-md-9 {
+      flex: 0 0 80%;
+      max-width: 80%; }
+  #ChartWellBlogBody #cwbContent {
+    flex: 0 0 80%;
+    max-width: 80%; } }
+@media (min-width: 1600px) {
+  #ChartWellBlog .cwb-col-xl-4 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%; } }
+html[data-useragent*='MSIE 10.0'] #ChartWellBlogNavContainer {
+  clear: both; }
+html[data-useragent*='MSIE 10.0'] .cwbContactFormFloater.isSticky {
+  width: 100%; }
+@media screen and (max-width: 767px) {
+  html[data-useragent*='MSIE 10.0'] #ChartWellBlog #ChartWellBlogTop form, html[data-useragent*='MSIE 10.0'] #ChartWellBlog #ChartWellBlogTop form .form-group {
+    margin-top: 15px; }
+  html[data-useragent*='MSIE 10.0'] #ChartWellBlog #ChartWellBlogNav .nav-item {
+    display: block;
+    width: 100%; }
+    html[data-useragent*='MSIE 10.0'] #ChartWellBlog #ChartWellBlogNav .nav-item a.nav-link {
+      padding: 0;
+      width: 100%; } }
+
+.cwbListPost.blue {
+  max-height: 1000px;
+  height: 1000px;
+  overflow: hidden;
+  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.15);
+  position: relative;
+  background-color: #0072bc; }
+
+.pagination .navigation {
+  margin: 15px auto; }
+
+.pagination .navigation a {
+  color: black; }
+
+.pagination .navigation a:hover:not(.disabled) {
+  background-color: #0072bc;
+  color: white; }
+
+.pagination .navigation a.disabled {
+  color: #999; }
+
+.pagination .navigation a.active {
+  box-shadow: inset 2px 2px 9px rgba(0, 0, 0, 0.45);
+  background-color: #f4f4f4; }
+
+/*# sourceMappingURL=cwBlog.css.map */

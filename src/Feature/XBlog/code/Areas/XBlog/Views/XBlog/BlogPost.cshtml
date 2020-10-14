@@ -1,0 +1,123 @@
+﻿@using Sitecore.Data.Items
+@using Sitecore.Links
+@using System.Web
+@using Sitecore.Feature.XBlog.Areas.XBlog.Items.Blog
+@using Sitecore.Feature.XBlog.Areas.XBlog.General
+@using Sitecore.Feature.XBlog.Areas.XBlog.Search
+@using Sitecore.Mvc
+@model Sitecore.Feature.XBlog.Areas.XBlog.Models.Blog.BlogPostModel
+
+@{
+    if (Model == null)
+    {
+        return;
+    }
+    Item dataSourceItem = Sitecore.Context.Database.GetItem(Sitecore.Mvc.Presentation.RenderingContext.Current.Rendering.DataSource);
+    BlogSettings settingsItem = DataManager.GetBlogSettingsItem(dataSourceItem != null ? dataSourceItem : Sitecore.Context.Item);
+    UrlOptions option = new UrlOptions();
+    option.AlwaysIncludeServerUrl = true;
+    option.LanguageEmbedding = Sitecore.Links.LanguageEmbedding.Always;
+    option.LanguageLocation = Sitecore.Links.LanguageLocation.FilePath;
+    option.LowercaseUrls = true;
+    string currentUrl = HttpUtility.UrlEncode(LinkManager.GetItemUrl(Model.BlogPost.InnerItem, option));
+    string title = HttpUtility.UrlEncode(Model.BlogPost.Title);
+
+}
+
+
+<!-- id='@Html.Raw(settingsItem.PrimaryCSSID)' -->
+<div class="cwbPostDetail">
+
+    <p class="small articleCategories">
+        @Html.Raw(settingsItem.BlogListingCategoryTitle + " " + CategoryManager.GetCommaSeperatedCategoryList(Model.BlogPost))
+    </p>
+    <h1 class="articleHeadline">@Html.Sitecore().Field(BlogPost.BlogPostTitleFieldId, Model.BlogPost.InnerItem)</h1>
+
+    <ul class="social">
+        @if (settingsItem.IncludeFacebookOnBlogPost)
+        {
+            <li class="facebook">
+                <!-- Replace with your URL. For best results, make sure you page has the proper FB Open Graph tags in header: https://developers.facebook.com/docs/opengraph/howtos/maximizing-distribution-media-content/ -->
+                <a href="https://www.facebook.com/sharer/sharer.php?u=@Html.Raw(currentUrl)" target="_blank" class="popup" title="facebook">
+                    <span class="icon">
+                        <img src="/Components/XBlog Assets/Icons/Facebook.svg" alt="facebook" />
+                    </span>
+                    <span class="text">facebook</span>
+                </a>
+            </li>
+        }
+        @if (settingsItem.IncludeLinkedinOnBlogPost)
+        {
+            <li class="linkedin">
+                <!-- Replace href with your meta and URL information -->
+                <a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=@Html.Raw(currentUrl)&amp;title=@Html.Raw(title)&amp;summary=@Html.Raw(title)" class="popup" title="linkedin">
+                    <span class="icon">
+                        <img src="/Components/XBlog Assets/Icons/LinkedIn.svg" alt="linkedin" />
+                    </span>
+                    <span class="text">linkedin</span>
+                </a>
+            </li>
+        }
+        @if (settingsItem.IncludeTwitterOnBlogPost)
+        {
+            <li class="twitter">
+                <!-- Replace href with your Meta and URL information  -->
+                <a target="_blank" href="http://twitter.com/home?status=@Html.Raw(title) @Html.Raw(currentUrl)" class="popup" title="twitter">
+                    <span class="icon">
+                        <img src="/Components/XBlog Assets/Icons/Twitter.svg" alt="twitter" />
+                    </span>
+                    <span class="text">twitter</span>
+                </a>
+            </li>
+        }
+        @if (settingsItem.IncludeGooglePlusOnBlogPost)
+        {
+            <li class="googleplus">
+                <!-- Replace href with your meta and URL information.  -->
+                <a target="_blank" href="https://plus.google.com/share?url=@Html.Raw(title) @Html.Raw(currentUrl)" class="popup" title="google+">
+                    <span class="icon">
+                        <img src="/Components/XBlog Assets/Icons/GooglePlus.svg" alt="google+" />
+                    </span>
+                    <span class="text">google+</span>
+                </a>
+            </li>
+        }
+        @if (settingsItem.IncludeEmailOnBlogPost)
+        {
+            <li class="email">
+                <!-- Replace subject with your message using URL Endocding: http://meyerweb.com/eric/tools/dencoder/ -->
+                <a href="mailto:?subject=@Html.Raw(title)&amp;body=@Html.Raw(currentUrl)" title="email">
+                    <span class="icon">
+                        <img src="/Components/XBlog Assets/Icons/Email.svg" alt="email" />
+                    </span>
+                    <span class="text">email</span>
+                </a>
+            </li>
+        }
+    </ul>
+
+
+
+
+    <div class="articleBody">
+        <div class="cwbPostMainImage">
+            @if (String.IsNullOrEmpty(Convert.ToString(Model.BlogPost.BlogImage.Value)))
+            {
+                <img class="img-responsive" src="@Url.Content("-/media/Images/Robert-Speck-Florence-991x821")" alt="@Html.Sitecore().Field(BlogPost.BlogPostTitleFieldId, Model.BlogPost.InnerItem)">
+            }
+            else
+            {
+                var postBkg = Url.Content(Model.BlogPost.BlogImageUrls);
+                <img class="img-responsive" src="@postBkg" alt="@Html.Sitecore().Field(BlogPost.BlogPostTitleFieldId, Model.BlogPost.InnerItem)">
+            }
+        </div>
+
+        @Html.Sitecore().Field(BlogPost.BlogPostBodyFieldId, Model.BlogPost.InnerItem)
+    </div>
+    <div class="articleTags">
+        @Html.Raw(settingsItem.BlogListingTagTitle + " " + TagManager.GetCommaSeperatedTagList(Model.BlogPost))
+    </div>
+</div>
+<div id="RelatedPosts">
+    @Html.Sitecore().Placeholder("xblogRelated")
+</div>
